@@ -33,7 +33,7 @@
 </head>
 
 <body>
-  
+
   {% include header.html %}
 
   <main id="content" class="main-content" role="main">
@@ -78,6 +78,20 @@
 
     </footer>
   </main>
+
+  <script>
+    function getNewRandomColor() {
+      var myArray = ['#bbaaaa', '#aabbbb', '#88aaaa'];
+      var rand = myArray[Math.floor(Math.random() * myArray.length)];
+      tags = document.getElementsByTagName('h3');
+      var i = 0;
+      while (tags[i]) {
+        tags[i].style.color = rand;
+        i++;
+      }
+    }
+    document.onload = getNewRandomColor();
+  </script>
 </body>
 
 </html>
