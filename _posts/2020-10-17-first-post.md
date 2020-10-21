@@ -1,5 +1,5 @@
 ---
 title: "first post"
-layout: default
+layout: post
 ---
 # first post lol
