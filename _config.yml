@@ -5,9 +5,8 @@ locale                   : "en"
 title                    : "Leandro Lapeña"
 title_separator          : "-"
 name                     : "Leandro Lapeña"
-description              : "the bed does not tousle"
+description              : "Electronics Engineer"
 url                      : "https://kdzmcqn.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-
 github:
   username               : "kdzmcqn"
   owner_name             : "Leandro Lapeña"
@@ -15,6 +14,7 @@ github:
 
 twitter: 
   username               : "Majinoo_gl"
+  title                  : "Creatio ex Nahilo"
 
 linkedin: 
   username               : "leandrolapena"
@@ -29,6 +29,6 @@ google_analytics         : UA-180928265-1
 
 
 # headers
-header_nav : ["GitHub", "Twitter", "Wordpress"]  
+header_nav : ["GitHub", "Twitter", "Wordpress"]
 
 markdown: kramdown
