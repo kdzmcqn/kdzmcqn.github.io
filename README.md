@@ -1,6 +1,6 @@
 
 ## License
-The following directories and their contents are Copyright Leandro Lapeña
+The following directories and their contents are Copyright Leandro Lapeña.
 You may not reuse anything therein without my permission:
 
 * \_posts/
