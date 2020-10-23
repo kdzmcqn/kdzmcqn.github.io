@@ -2,6 +2,7 @@
 @import "rouge-github";
 @import "variables";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Fira Mono");
 
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
@@ -351,6 +352,24 @@ a {
     background-color: $hr-border-color;
     border: 0;
   }
+  tt {
+    padding: 1px 4px;
+    font-family: 'Fira Mono';
+    color: #243f59;
+    font-size: smaller;
+    border-radius: .6em;
+  }
+}
+
+#cat {
+  display: flex;
+  align-items: center;
+}
+#cat div{
+  flex: .3;
+}
+#cat tt{
+  text-align: left;
 }
 
 .site-footer {

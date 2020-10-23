@@ -1,7 +1,11 @@
-<ul>
+<ul style="list-style: none;">
     {% for post in site.posts | compact %}
-            {{ post.date | date_to_string }} &#8881;
-            <tt style="background-color: teal; border-radius: 2px;"> {{ post.category }} </tt>
-             &#8881; <a href="{{ post.url }}">{{ post.title }}</a><br>
-        {% endfor %}
+    <li id='cat'>
+        <div>{{ post.date | date_to_string }} &#8881;
+            <tt style="background-color: coral;">{{ post.category }}</tt>
+            <tt style="background-color: teal;">{{ post.category }}</tt>
+        </div>
+        <div>&#8881;<a href="{{ post.url }}">{{ post.title }}</a></div>
+    </li>
+    {% endfor %}
 </ul>
