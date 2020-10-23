@@ -7,22 +7,24 @@ title_separator          : "-"
 name                     : "Leandro Lapeña"
 description              : "Electronics Engineer"
 url                      : "https://kdzmcqn.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+
 github:
   username               : "kdzmcqn"
   owner_name             : "Leandro Lapeña"
   owner_url              : "https://github.com/kdzmcqn"
-author:
-  twitter: 
-    username               : "Majinoo_gl"
-    title                  : "Creatio ex Nahilo"
-
-linkedin: 
-  username               : "leandrolapena"
 
 author:
   name                   : "Leandro Lapeña"
   location               : "Manila, PH"
   email                  : "lapenaleadnro@gmail.com"
+
+twitter:
+  username               : "Majinoo_gl"    
+  title                  : "Creatio ex Nahilo"
+
+  linkedin: 
+  username               : "leandrolapena"
+
 
     # Google Analytics
 google_analytics         : UA-180928265-1

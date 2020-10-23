@@ -9,10 +9,9 @@
             </svg>
         </a>
     </span>
-
     <!-- Twitter icon -->
     <span class="my-span-icon">
-        <a href="https://twitter.com/{{ site.author.twitter.username }}"
+        <a href="https://twitter.com/{{ site.data.author.twitter }}"
             aria-label="{{ site.github.owner_name }}'s Twitter" title="{{ site.github.owner_name }}'s Twitter">
             <svg class="my-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                 <path
@@ -25,7 +24,7 @@
     {% assign contact_page = site.pages | where: "path", "contact.md" | first %}
     {% if contact_page.title %}
     <span class="my-span-icon">
-        <a href="{{ contact_page.url | absolute_url }}" aria-label="Contact"
+        <a href="{{ contact_page.url | absolute_url or site.author.email}}" aria-label="Contact"
             title="Contact {{ site.github.owner_name }}">
             <svg class="my-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                 <path
