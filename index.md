@@ -12,15 +12,35 @@ layout: default
 
 ### Telecom Experience
 
-|![Telecom_11](assets/img/telecom_11.jpg){:width="400px"}|![Telecom_12](assets/img/telecom_12.jpg){:width="400px"} |![Telecom_21](assets/img/telecom_21.jpg){:width="400px"} |![Telecom_22](assets/img/telecom_22.jpg){:width="400px"}|
+<table>
+<tr>
+<td><img alt='Telecom_11' src='assets/img/telecom_11.jpg' width='400px'/></td>
+<td><img alt='Telecom_12' src='assets/img/telecom_12.jpg' width='400px'/></td>
+<td><img alt='Telecom_21' src='assets/img/telecom_21.jpg' width='400px'/></td>
+<td><img alt='Telecom_22' src='assets/img/telecom_22.jpg' width='400px'/></td>
+</tr>
+</table>
 
 ### Biomedical Experience
 
-|![service_11](assets/img/service_11.jpg){:width="400px"} |![Pampanga_12](assets/img/Pampanga_12.jpg){:width="400px"} |![Pampanga_21](assets/img/Pampanga_21.jpg){:width="400px"} |![service_22](assets/img/service_22.jpg){:width="400px"}|
+<table>
+<tr>
+<td><img alt='service_11' src='assets/img/service_11.jpg' width="400px"/></td>
+<td><img alt='Pampanga_12' src='assets/img/Pampanga_12.jpg' width="400px"/></td>
+<td><img alt='Pampanga_21' src='assets/img/Pampanga_21.jpg' width="400px"/></td>
+<td><img alt='service_22' src='assets/img/service_22.jpg' width="400px"/></td>
+</tr>
+</table>
 
 # Where I train
 
-|![gym1](assets/img/gym3.jpg){:width="400px"} |![gym1](assets/img/gym1.jpg){:width="400px"} |![gym1](assets/img/gym2.jpg){:width="400px"}|
+<table>
+<tr>
+<td><img alt='gym3' src='assets/img/gym3.jpg' width='400px'/></td>
+<td><img alt='gym1' src='assets/img/gym1.jpg' width='400px'/></td>
+<td><img alt='gym2' src='assets/img/gym2.jpg' width='400px'/></td>
+</tr>
+</table>
 
 ### test links
 
@@ -28,10 +48,4 @@ layout: default
 
 ### posts
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <p>{{ post.date | date_to_string }} &#8881; <a href="{{ post.url }}">{{ post.title }}</a></p>
-    </li>
-  {% endfor %}
-</ul>
+{% include postList.html %}
