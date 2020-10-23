@@ -11,10 +11,10 @@ github:
   username               : "kdzmcqn"
   owner_name             : "Leandro Lapeña"
   owner_url              : "https://github.com/kdzmcqn"
-
-twitter: 
-  username               : "Majinoo_gl"
-  title                  : "Creatio ex Nahilo"
+author:
+  twitter: 
+    username               : "Majinoo_gl"
+    title                  : "Creatio ex Nahilo"
 
 linkedin: 
   username               : "leandrolapena"
