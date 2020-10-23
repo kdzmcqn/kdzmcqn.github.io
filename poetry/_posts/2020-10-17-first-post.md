@@ -2,6 +2,6 @@
 title: "first post"
 description:
 layout: post
-category: telecom
+category: [telecom, rf]
 ---
 # first post lol
