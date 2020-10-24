@@ -4,12 +4,6 @@ layout: default
 description: Art is free thinking
 ---
 # Art is free thinking
-## Art is free thinking
-### Art is free thinking
-#### Art is free thinking
-##### Art is free thinking
-
-
 **Leandro Lapeña**
 
 ---
