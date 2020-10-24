@@ -1,8 +1,10 @@
 <ul id='post_ul' style="list-style: none;">
     {%- for post in site.posts | compact -%}
-    <li class="grid-container" style="display: flex; flex-wrap: nowrap;">
-        <div class="grid-item" style="display: inline-block; flex-wrap: nowrap;flex: 1">
+    <li style="display: flex; flex-wrap: wrap;">
+        <div style="display: inline-block; flex-wrap: nowrap;flex: 0 1 105px">
             <tt style="background-color:#8f8f8f; color: white;">{{ post.date | date_to_string }}</tt>
+        </div>
+        <div style="display: inline-block; flex-wrap: wrap;flex: .5">
             {%- for cats in post.category -%}
             {%- if cats == 'rf' -%}
             <tt style="background-color: coral;">{{ cats }}</tt>
@@ -11,7 +13,7 @@
             {%- endif -%}
             {%- endfor -%}
         </div>
-        <div class="grid-item" style="text-align: left; flex: 1; display: inline-block;">&#8881;<a
+        <div style="text-align: left; flex: 1; display: inline-block;">&#8881;<a
                 href="{{ post.url }}">{{ post.title }}</a></div>
     </li>
     {%- endfor -%}
