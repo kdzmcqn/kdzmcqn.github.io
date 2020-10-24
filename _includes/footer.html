@@ -21,8 +21,8 @@
     </span>
 
     <!-- Contact icon -->
-    {% assign contact_page = site.pages | where: "path", "contact.md" | first %}
-    {% if contact_page.title %}
+    {%- assign contact_page = site.pages | where: "path", "contact.md" | first -%}
+    {%- if contact_page.title -%}
     <span class="my-span-icon">
         <a href="{{ contact_page.url | absolute_url or site.author.email }}" aria-label="Contact"
             title="Contact {{ site.github.owner_name }}">
@@ -32,6 +32,6 @@
             </svg>
         </a>
     </span>
-    {% endif %}
+    {%- endif -%}
 
 </footer>

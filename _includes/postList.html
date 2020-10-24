@@ -1,18 +1,18 @@
 <ul id='post_ul' style="list-style: none;">
-    {% for post in site.posts | compact %}
+    {%- for post in site.posts | compact -%}
     <li class="grid-container" style="display: flex; flex-wrap: nowrap;">
         <div class="grid-item" style="display: inline-block; flex-wrap: nowrap;flex: 1">
             <tt style="background-color:#8f8f8f; color: white;">{{ post.date | date_to_string }}</tt>
-            {% for cats in post.category %}
-            {% if cats == 'rf' %}
+            {%- for cats in post.category -%}
+            {%- if cats == 'rf' -%}
             <tt style="background-color: coral;">{{ cats }}</tt>
-            {% else %}
+            {%- else -%}
             <tt style="background-color: rgb(101, 204, 211);">{{ cats }}</tt>
-            {% endif %}
-            {% endfor %}
+            {%- endif -%}
+            {%- endfor -%}
         </div>
         <div class="grid-item" style="text-align: left; flex: 1; display: inline-block;">&#8881;<a
                 href="{{ post.url }}">{{ post.title }}</a></div>
     </li>
-    {% endfor %}
+    {%- endfor -%}
 </ul>
