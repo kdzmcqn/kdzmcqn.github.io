@@ -352,16 +352,28 @@ a {
     background-color: $hr-border-color;
     border: 0;
   }
-  tt {
-    padding: 1px 4px;
-    font-family: 'Fira Mono';
-    font-size: 14px;
-    color: #243f59;
-    border-radius: .5em;
+  .cats {
+    tt {
+      padding: 1px 4px;
+      font-family: "Fira Mono";
+      font-size: 14px;
+      color: #172838;
+      border-radius: 0.5em;
+      margin: 1px 1px 1px 1px;
+    }
+  }
+  .catdate {
+    tt {
+      padding: 1px 4px;
+      font-family: "Fira Mono";
+      font-size: 14px;
+      color: #106e6d;
+      border-radius: 0.5em;
+    }
   }
 }
 
-#post_ul{
+#post_ul {
   padding: 0px 0px 0px 0px;
   padding-inline-start: 0px;
 }

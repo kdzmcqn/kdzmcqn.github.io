@@ -2,6 +2,6 @@
 title: "third post"
 description: yo
 layout: post
-category: life
+category: [art, ML, algo, semicon]
 ---
 # first post lol

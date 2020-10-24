@@ -1,25 +1,32 @@
 <ul id="post_ul" style="list-style: none">
     {%- for post in site.posts | compact -%}
     <li style="display: flex; flex-wrap: wrap">
-        <div style="display: inline-block; flex-wrap: nowrap; flex: 0 1 105px">
-            <tt style="background-color: #8f8f8f; color: white">{{ post.date | date_to_string }}</tt>
+        <div class='catdate' style="display: inline-block; flex-wrap: nowrap; flex: 0 1 105px">
+            <tt>{{ post.date | date_to_string }}</tt>
         </div>
-        <div class='cats' style="display: inline-block; flex-wrap: wrap; flex: 0 1 150px">
-            {%- for cats in post.category -%} {%- if cats == 'rf' -%}
-            <tt style="background-color: coral">{{ cats }}</tt>
-            {%- else -%}
-            <tt style="background-color: rgb(101, 204, 211)">{{ cats }}</tt>
-            {%- endif -%} {%- endfor -%}
+        <div class="cats" style="display: inline-block; flex-wrap: wrap; flex: 0 1 150px">
+            {%- for cats in post.category -%} 
+                {%- if cats == 'algo' -%}
+                    <tt style="background-color: #73ad9c">{{ cats }}</tt>
+                {%- elsif cats == 'art' -%}
+                    <tt style="background-color: #d2d2d2">{{ cats }}</tt>
+                {%- elsif cats == 'biomed' -%}
+                    <tt style="background-color: #c4b2ff">{{ cats }}</tt>
+                {%- elsif cats == 'ML' -%}
+                    <tt style="background-color: #ffa978">{{ cats }}</tt>
+                {%- elsif cats == 'personal' -%}
+                    <tt style="background-color: #d2d2d2">{{ cats }}</tt>
+                {%- elsif cats == 'RF' -%}
+                    <tt style="background-color: #f37575">{{ cats }}</tt>
+                {%- elsif cats == 'semicon' -%}
+                    <tt style="background-color: #9eeef9">{{ cats }}</tt>
+                {%- elsif cats == 'telecom' -%}
+                    <tt style="background-color: #f1e584">{{ cats }}</tt>
+                {%- endif -%} 
+            {%- endfor -%}
         </div>
         &#8881;
-        <div style="
-        text-align: left;
-        flex: 1;
-        display: inline-block;
-        text-overflow: hidden;
-        overflow: auto;
-        white-space: nowrap;
-      ">
+        <div style=" text-align: left; flex: 1; display: inline-block; text-overflow: hidden; overflow: auto; white-space: nowrap; ">
             <a href="{{ post.url }}">{{ post.title }}</a>
         </div>
     </li>
