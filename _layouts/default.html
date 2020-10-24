@@ -136,7 +136,7 @@
     })(this);
 
     $(document).ready(function () {
-      if (isMobile.any) {
+      if (isMobile.any && !(isMobile.tablet)) {
         $(".cats").each(function () {
           $(this).attr("style", "display: inline-block; flex-wrap: nowrap; flex: 1;");
         });
