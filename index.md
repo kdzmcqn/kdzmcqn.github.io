@@ -11,4 +11,4 @@ layout: default
 [Online Resume (General version)](https://registry.jsonresume.org/kdzmcqn)
 
 
-{%- include postList.html -%}
+{% include postList.html %}
