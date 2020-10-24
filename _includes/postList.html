@@ -1,21 +1,27 @@
-<ul id='post_ul' style="list-style: none;">
+<ul id="post_ul" style="list-style: none">
     {%- for post in site.posts | compact -%}
-    <li style="display: flex; flex-wrap: wrap;">
-        <div style="display: inline-block; flex-wrap: nowrap;flex: 0 1 105px">
-            <tt style="background-color:#8f8f8f; color: white;">{{ post.date | date_to_string }}</tt>
+    <li style="display: flex; flex-wrap: wrap">
+        <div style="display: inline-block; flex-wrap: nowrap; flex: 0 1 105px">
+            <tt style="background-color: #8f8f8f; color: white">{{ post.date | date_to_string }}</tt>
         </div>
-        <div style="display: inline-block; flex-wrap: wrap;flex: 0 1 150px">
-            {%- for cats in post.category -%}
-            {%- if cats == 'rf' -%}
-            <tt style="background-color: coral;">{{ cats }}</tt>
+        <div class='cats' style="display: inline-block; flex-wrap: wrap; flex: 0 1 150px">
+            {%- for cats in post.category -%} {%- if cats == 'rf' -%}
+            <tt style="background-color: coral">{{ cats }}</tt>
             {%- else -%}
-            <tt style="background-color: rgb(101, 204, 211);">{{ cats }}</tt>
-            {%- endif -%}
-            {%- endfor -%}
+            <tt style="background-color: rgb(101, 204, 211)">{{ cats }}</tt>
+            {%- endif -%} {%- endfor -%}
         </div>
         &#8881;
-        <div style="text-align: left; flex: 1; display: inline-block; text-overflow: hidden; overflow: auto; white-space: nowrap;"><a
-                href="{{ post.url }}">{{ post.title }}</a></div>
+        <div style="
+        text-align: left;
+        flex: 1;
+        display: inline-block;
+        text-overflow: hidden;
+        overflow: auto;
+        white-space: nowrap;
+      ">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </div>
     </li>
     {%- endfor -%}
 </ul>
