@@ -355,21 +355,15 @@ a {
   tt {
     padding: 1px 4px;
     font-family: 'Fira Mono';
+    font-size: 13px;
     color: #243f59;
-    font-size: smaller;
-    border-radius: .6em;
+    border-radius: .5em;
   }
 }
 
-#cat {
-  display: flex;
-  align-items: center;
-}
-#cat div{
-  flex: .3;
-}
-#cat tt{
-  text-align: left;
+#post_ul{
+  padding: 0px 0px 0px 0px;
+  padding-inline-start: 0px;
 }
 
 .site-footer {

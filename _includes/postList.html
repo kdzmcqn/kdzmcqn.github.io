@@ -1,14 +1,19 @@
-<ul style="list-style: none;">
+<ul id='post_ul' class='flex-container' style="list-style: none;">
     {% for post in site.posts | compact %}
-    <li id='cat'>
-        <div>{{ post.date | date_to_string }} &#8881;
-            {% for cats in post.category %}
+    <li>
+        <div>
+            <div>
+                <tt style="background-color:#8f8f8f; color: white;">{{ post.date | date_to_string }}</tt>
+            </div>
+            <div>
+                {% for cats in post.category %}
                 {% if cats == 'rf' %}
                 <tt style="background-color: coral;">{{ cats }}</tt>
                 {% else %}
                 <tt style="background-color: rgb(101, 204, 211);">{{ cats }}</tt>
                 {% endif %}
-            {% endfor %}
+                {% endfor %}
+            </div>
         </div>
         <div>&#8881;<a href="{{ post.url }}">{{ post.title }}</a></div>
     </li>
