@@ -31,11 +31,10 @@ layout: default
 </section>
 <hr>
 <section>
-    <h2>{{ page.title }}</h2>
     <article>{{ content }}</article>
 </section>
-
-<section>
+<div>
+    <hr>
     {%- if page.links -%}
     <p>
         {% for hash in page.links %}
@@ -57,5 +56,5 @@ layout: default
         {% endfor%}
     </p>
     {% endif %}
-</section>
+</div>
 <p><a href="/">back</a></p>
