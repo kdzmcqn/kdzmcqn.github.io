@@ -424,8 +424,8 @@ a {
 
     &:hover {
       text-decoration: none;
-      color: $section-headings-color; // IE8
-      fill: $section-headings-color;
+      // color: $section-headings-color; // IE8
+      // fill: $section-headings-color;
       transform: scale(1.25);
       transition: color 0.5s, transform 0.2s ease-out;
     }

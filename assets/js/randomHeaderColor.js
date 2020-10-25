@@ -12,9 +12,15 @@ function getNewRandomColor() {
 
   $("meta").each(function () {
     if ($(this).attr("name") == "theme-color") {
-      $(this).attr("content", primary + "42");
+      $(this).attr("content", primary);
     }
   });
+
+$(".my-svg-icon").hover(
+    function () {
+      $(this).css("color", primary);
+    },
+  );
   // tags = document.getElementsByTagName('h3');
   // var i = 0;
   // while (tags[i]) {
