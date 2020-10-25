@@ -87,7 +87,7 @@ $(document).ready(function () {
     $(".cats").each(function () {
       $(this).attr(
         "style",
-        "display: inline-block; flex-wrap: nowrap; flex: 1;"
+        "display: inline-block; flex-wrap: nowrap; flex: 0.5;"
       );
     });
   }
