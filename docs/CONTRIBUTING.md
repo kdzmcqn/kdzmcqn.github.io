@@ -13,7 +13,7 @@ We'd love to help. Check out [the support guidelines](SUPPORT.md).
 
 ## How to report a bug
 
-Think you found a bug? Please check [the list of open issues](https://github.com/kdzmcqn/kdzmcqn.github.io/issues) to see if your bug has already been reported. If it hasn't please [submit a new issue](https://github.com/lorepirri/cayman-blog/issues/new).
+Think you found a bug? Please check [the list of open issues](https://github.com/lorepirri/cayman-blog/issues) to see if your bug has already been reported. If it hasn't please [submit a new issue](https://github.com/lorepirri/cayman-blog/issues/new).
 
 Here are a few tips for writing *great* bug reports:
 
