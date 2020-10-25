@@ -1,13 +1,15 @@
 function getNewRandomColor() {
   var pheadcolors = ["#41eded", "#ed9898", "#60a2d3", "#c8c8c8", "#fff491"];
   var sheadcolors = ["#ed4141", "#98eded", "#d39160", "#00ffa1", "#919cff"];
+  var degs = ["0deg","45deg", "60deg", "90deg", "120deg"];
+  var deg = degs[Math.floor(Math.random() * degs.length)];
   var primary = pheadcolors[Math.floor(Math.random() * pheadcolors.length)];
   var secondary = sheadcolors[Math.floor(Math.random() * sheadcolors.length)];
   $(".page-header").css("background-color", secondary);
   $(".page-header").css("background-color", secondary);
   $(".page-header").css(
     "background-image",
-    "linear-gradient(120deg," + secondary + "," + primary + ")"
+    "linear-gradient("+deg+","+secondary+","+primary+")"
   );
 
   $("meta").each(function () {
