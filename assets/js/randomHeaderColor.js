@@ -19,9 +19,12 @@ function getNewRandomColor() {
   });
 $(document).ready(function () {
  $(".my-svg-icon").hover(
-    function () {$(this).css("fill", primary);},
-    function () {$(this).css("fill", secondary);}
+    function () {$(this).css("fill", secondary);},
+    function () {$(this).css("fill", primary);}
   );
+
+  $(".my-svg-icon").css("fill", primary);
+
  });
   // tags = document.getElementsByTagName('h3');
   // var i = 0;

@@ -5,3 +5,5 @@ layout: post
 category: [art, ML, algo, semicon]
 ---
 # first post lol
+
+[back](/)

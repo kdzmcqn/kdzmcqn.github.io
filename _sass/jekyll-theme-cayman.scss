@@ -371,11 +371,24 @@ a {
       border-radius: 0.5em;
     }
   }
-}
+  #post_ul {
+    padding: 0px 0px 0px 0px;
+    padding-inline-start: 0px;
+    .catdate {
+      display: inline-block;
+      flex-wrap: nowrap;
+      flex: 0 1 105px;
+    }
 
-#post_ul {
-  padding: 0px 0px 0px 0px;
-  padding-inline-start: 0px;
+    .divpost_title {
+      text-align: left;
+      flex: 1;
+      display: inline-block;
+      text-overflow: hidden;
+      overflow: auto;
+      white-space: nowrap;
+    }
+  }
 }
 
 .site-footer {
