@@ -15,12 +15,12 @@ function getNewRandomColor() {
       $(this).attr("content", primary);
     }
   });
-
-$(".my-svg-icon").hover(
-    function () {
-      $(this).css("color", primary);
-    },
+$(document).ready(function () {
+ $(".my-svg-icon").hover(
+    function () {$(this).css("fill", primary);},
+    function () {$(this).css("fill", secondary);}
   );
+ });
   // tags = document.getElementsByTagName('h3');
   // var i = 0;
   // while (tags[i]) {

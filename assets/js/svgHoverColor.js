@@ -14,8 +14,7 @@ function getNewRandomColor() {
 //   random_bg_color();
 
   $(".my-svg-icon").hover(
-    function () {
-      $(this).css("color", primary);
-    },
+    function () {$(this).css("color", primary);},
+    function () {$(this).css("color", secondary);}
   );
 }
