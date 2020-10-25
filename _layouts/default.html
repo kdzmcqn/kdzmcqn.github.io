@@ -42,7 +42,14 @@
       var primary = pheadcolors[Math.floor(Math.random() * pheadcolors.length)];
       var secondary = sheadcolors[Math.floor(Math.random() * sheadcolors.length)];
       $(".page-header").css("background-color", secondary);
+      $(".page-header").css("background-color", secondary);
       $(".page-header").css("background-image", "linear-gradient(120deg," +secondary+","+ primary+")");
+      
+      $("meta").each(function() {
+        if($(this).attr("name") == "theme-color") {
+          $(this).attr("content" , primary + "42");
+        };
+      });      
       // tags = document.getElementsByTagName('h3');
       // var i = 0;
       // while (tags[i]) {
