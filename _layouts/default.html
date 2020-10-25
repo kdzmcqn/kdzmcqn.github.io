@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-  
-  <head>
-    <!-- Favicon -->
-    <link rel="icon" href="{{ "favicon.ico" | absolute_url }}">
-    
-    <!-- Google Analytics -->
-    {%- if site.google_analytics -%}
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-      gtag('config', '{{ site.google_analytics }}');
-    </script>
+
+<head>
+  <!-- Favicon -->
+  <link rel="icon" href="{{ "favicon.ico" | absolute_url }}">
+
+  <!-- Google Analytics -->
+  {%- if site.google_analytics -%}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', '{{ site.google_analytics }}');
+  </script>
   {%- endif -%}
-  <!-- Google Analytics end -->
-  
+
   {%- seo -%}
-  
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#157878">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <!-- Home CSS-->
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-  <!-- Jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
-  {%- include header.html -%}
+  <header>
+    {%- include header.html -%}
+  </header>
   <main id="content" class="main-content" role="main">
     {{ content }}
     {%- include footer.html -%}

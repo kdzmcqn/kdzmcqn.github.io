@@ -1,9 +1,17 @@
 ---
-title: "third post"
-description: yo
+title: "Some poetry"
+description: "yo"
 layout: post
-category: [art, ML, algo, semicon]
+category: poetry
+tags: math
+header: /assets/img/poetry/white.jpg
+links:
+    - source: "/assets/img/biomed/service_11.jpg"
+    - download: "yo.com"
 ---
-# first post lol
 
-[back](/)
+sdfsf
+dsfsd
+dsfds
+
+{{ assets.img.}}
