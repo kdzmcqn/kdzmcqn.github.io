@@ -6,27 +6,29 @@ layout: default
     <tt class="catdate">{{ page.date | date_to_string }}</tt>
     {%- for cats in page.category -%}
     {%- if cats == "algo" -%}
-    <tt class="cats" style="background-color: #73ad9c">{{ cats }}</tt>
+    <tt class="cats_tags" style="background-color: #73ad9c">{{ cats }}</tt>
     {%- elsif cats == "art" -%}
-    <tt class="cats" style="background-color: #d2d2d2">{{ cats }}</tt>
+    <tt class="cats_tags" style="background-color: #d2d2d2">{{ cats }}</tt>
     {%- elsif cats == "biomed" -%}
-    <tt class="cats" style="background-color: #c4b2ff">{{ cats }}</tt>
+    <tt class="cats_tags" style="background-color: #c4b2ff">{{ cats }}</tt>
     {%- elsif cats == "coding" -%}
-    <tt class="cats" style="background-color: #50afad">{{ cats }}</tt>
+    <tt class="cats_tags" style="background-color: #50afad">{{ cats }}</tt>
     {%- elsif cats == "ML" -%}
-    <tt class="cats" style="background-color: #ffa978">{{ cats }}</tt>
+    <tt class="cats_tags" style="background-color: #ffa978">{{ cats }}</tt>
     {%- elsif cats == "personal" -%}
-    <tt class="cats" style="background-color: #d2d2d2">{{ cats }}</tt>
+    <tt class="cats_tags" style="background-color: #d2d2d2">{{ cats }}</tt>
     {%- elsif cats == "poetry" -%}
-    <tt class="cats" style="background-color: #ccb03e90">{{ cats }}</tt>
+    <tt class="cats_tags" style="background-color: #ccb03e90">{{ cats }}</tt>
     {%- elsif cats == "RF" -%}
-    <tt class="cats" style="background-color: #f37575">{{ cats }}</tt>
+    <tt class="cats_tags" style="background-color: #f37575">{{ cats }}</tt>
     {%- elsif cats == "semicon" -%}
-    <tt class="cats" style="background-color: #9eeef9">{{ cats }}</tt>
+    <tt class="cats_tags" style="background-color: #9eeef9">{{ cats }}</tt>
     {%- elsif cats == "telecom" -%}
-    <tt class="cats" style="background-color: #f1e584">{{ cats }}</tt>
-    {%- endif -%} {%- endfor -%} {%- for tag in page.tags -%}
-    <tt class="cats" style="background-color: #70e474">{{ tag }}</tt>
+    <tt class="cats_tags" style="background-color: #f1e584">{{ cats }}</tt>
+    {%- endif -%} 
+    {%- endfor -%} 
+    {%- for tag in page.tags -%}
+    <tt class="cats_tags" style="background-color: #70e474">{{ tag }}</tt>
     {%- endfor -%}
 </section>
 <hr>
