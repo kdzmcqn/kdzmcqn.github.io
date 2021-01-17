@@ -23,13 +23,6 @@ function getNewRandomColor() {
       "background-image",
       "linear-gradient(" + deg + "," + secondary + "," + primary + ")"
     );
-  } else if (head_type == 1 && deg != "0deg") {
-    $(".page-header").css(
-      "background-image",
-      "linear-gradient(" + deg + ", " + dark_3 + ", " + dark_2 + ", " + dark_1 + ")"
-    );
-  }
-
   $("meta").each(function () {
     if ($(this).attr("name") == "theme-color") {
       $(this).attr("content", primary);
@@ -47,7 +40,31 @@ function getNewRandomColor() {
 
     $(".my-svg-icon").css("fill", primary);
   });
-  // tags = document.getElementsByTagName('h3');
+  } else if (head_type == 1 && deg != "0deg") {
+    $(".page-header").css(
+      "background-image",
+      "linear-gradient(" + deg + ", " + dark_3 + ", " + dark_2 + ", " + dark_1 + ")"
+    );
+    
+    $("meta").each(function () {
+      if ($(this).attr("name") == "theme-color") {
+      $(this).attr("content", dark_3);
+    }
+  });
+  $(document).ready(function () {
+    $(".my-svg-icon").hover(
+      function () {
+        $(this).css("fill", dark_1);
+      },
+      function () {
+        $(this).css("fill", dark_3);
+      }
+      );
+      
+      $(".my-svg-icon").css("fill", dark_3);
+    });
+  }
+    // tags = document.getElementsByTagName('h3');
   // var i = 0;
   // while (tags[i]) {
   //   tags[i].style.color = rand;
