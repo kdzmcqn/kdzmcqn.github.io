@@ -66,23 +66,25 @@ function getNewRandomColor() {
         dark_1 +
         ")"
     );
+    primary = dark_3;
+    secondary = dark_1;
   }
   $("meta").each(function () {
     if ($(this).attr("name") == "theme-color") {
-      $(this).attr("content", dark_3);
+      $(this).attr("content", primary);
     }
   });
   $(document).ready(function () {
     $(".my-svg-icon").hover(
       function () {
-        $(this).css("fill", dark_1);
+        $(this).css("fill", secondary);
       },
       function () {
-        $(this).css("fill", dark_3);
+        $(this).css("fill", primary);
       }
     );
 
-    $(".my-svg-icon").css("fill", dark_3);
+    $(".my-svg-icon").css("fill", secondary);
   });
   // tags = document.getElementsByTagName('h3');
   // var i = 0;
