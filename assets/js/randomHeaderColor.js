@@ -46,7 +46,8 @@ function getNewRandomColor() {
       "linear-gradient(" + deg + ", " + dark_3 + ", " + dark_2 + ", " + dark_1 + ")"
     );
     
-    $("meta").each(function () {
+    
+  }$("meta").each(function () {
       if ($(this).attr("name") == "theme-color") {
       $(this).attr("content", dark_3);
     }
@@ -63,7 +64,6 @@ function getNewRandomColor() {
       
       $(".my-svg-icon").css("fill", dark_3);
     });
-  }
     // tags = document.getElementsByTagName('h3');
   // var i = 0;
   // while (tags[i]) {
