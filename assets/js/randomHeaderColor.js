@@ -84,7 +84,7 @@ function getNewRandomColor() {
       }
     );
 
-    $(".my-svg-icon").css("fill", secondary);
+    $(".my-svg-icon").css("fill", primary);
   });
   // tags = document.getElementsByTagName('h3');
   // var i = 0;
