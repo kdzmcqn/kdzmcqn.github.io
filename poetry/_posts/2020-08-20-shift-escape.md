@@ -1,0 +1,42 @@
+---
+layout: post
+title: "Shift Escape"
+description: "..."
+category: poetry
+tags: ["wordpress", "shift", "escape"]
+---
+<!-- wp:paragraph -->
+<p>You cannot abode </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>You cannot retreat </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>You cannot cajole </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>You cannot replete </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>You cannot trove </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>You cannot oblique </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>You cannot dole </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>You cannot mistreat </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>You Control+utter+defeat</p>
+<!-- /wp:paragraph -->
