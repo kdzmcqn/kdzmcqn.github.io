@@ -4,13 +4,15 @@ title: Simple JS Code of this site's Header
 description: some random coding content
 category: coding
 tags: ["Javacript", "Header", "Front-end"]
+links:
+    - source: https://github.com/kdzmcqn/kdzmcqn.github.io/blob/main/assets/js/randomHeaderColor.js
+    - download: https://raw.githubusercontent.com/kdzmcqn/kdzmcqn.github.io/main/assets/js/randomHeaderColor.js
 ---
 
 # Changing Header Colors and Mobile Browser Tab Colors for Every Refresh of the Page
 If you refresh or click any links, the following code will change the header color and the tab color, if possible.
 They change randomly between a two-gradient scheme and a three-gradient scheme. The two-gradient comprises of much lighter colors,
 while the three-gradient comprises darker ones.
-
 ## Array of Colors
 I pick sick random colors
 
@@ -129,7 +131,6 @@ Changes the tab colors in a mobile browser to match with the header. This is sic
 
     $(".my-svg-icon").css("fill", secondary);
   });
-
 }
 {% endhighlight %}
 
