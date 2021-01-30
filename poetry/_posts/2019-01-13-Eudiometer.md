@@ -4,131 +4,133 @@ title: "Eudiometer"
 description: "..."
 category: poetry
 tags: ["wordpress", "of palate and polite", "instrument"]
+links:
+- wordpress: https://kdzmcqn.wordpress.com/2020/01/12/eudio-me-ter/
 ---
 
 With scale turning high
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Magnitude tricks the eye
-The force needed to lift
-Does on the brows drifts
-As distance stretches
-Some potency will fetch
-
-
-
-
-
-
-
-
-
-
-
-
-
-That is the tempest
-A phenomenon
-
-
-
-
-
-
-
-
-
-
-
-
-
-Observed between chests
-A drag force upon
-The waltz of our jest
-So gently it clings
-Forfeits, then, the skin
-
-
-
-
-
-
-
-
-
-
-
-
-
-Unnoticed by sense
-The then accrued flight
-As distance occurred heightens
-
-
-
-
-
-
-
-
-
-
-
-
-
-That’s why it is wise
-To start from the toes
-Climbing to the thighs
-With your instrument
-Of palate and polite
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-And just as the scale
-When it tricks the eye
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-You’d be just as surprised
-At the climax
-Of your flight.
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+Magnitude tricks the eye<br>
+The force needed to lift<br>
+Does on the brows drifts<br>
+As distance stretches<br>
+Some potency will fetch<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+That is the tempest<br>
+A phenomenon<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+Observed between chests<br>
+A drag force upon<br>
+The waltz of our jest<br>
+So gently it clings<br>
+Forfeits, then, the skin<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+Unnoticed by sense<br>
+The then accrued flight<br>
+As distance occurred heightens<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+That’s why it is wise<br>
+To start from the toes<br>
+Climbing to the thighs<br>
+With your instrument<br>
+Of palate and polite<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+And just as the scale<br>
+When it tricks the eye<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+You’d be just as surprised<br>
+At the climax<br>
+Of your flight.<br>

@@ -4,6 +4,8 @@ title: "Shift Escape"
 description: "..."
 category: poetry
 tags: ["wordpress", "shift", "escape"]
+links:
+- wordpress: https://kdzmcqn.wordpress.com/2020/08/01/shift-escape/
 ---
 <!-- wp:paragraph -->
 <p>You cannot abode </p>
