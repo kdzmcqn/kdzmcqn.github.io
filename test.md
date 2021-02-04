@@ -4,4 +4,4 @@ title: test
 description: test
 permalink: /test.html
 ---
-<i class="fa fa-cloud"></i>
+Refresh the page <i class="fa fa-cloud"></i>
