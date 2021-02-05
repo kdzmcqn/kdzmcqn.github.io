@@ -1,7 +1,9 @@
 ---
 layout: test
 title: test
-description: test
+description: <i class="fa fa-cloud"></i>&nbsp;<i class="fa fa-cloud"></i>&nbsp;<i class="fa fa-cloud"></i>
 permalink: /test.html
 ---
-Refresh the page <i class="fa fa-cloud"></i>
+Try:
+ - refreshing the page
+ - hovering the icons

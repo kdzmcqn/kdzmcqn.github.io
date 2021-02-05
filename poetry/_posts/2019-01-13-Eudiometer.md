@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Eudiometer"
-description: "..."
+description: <i class="fa fa-cloud"></i>&nbsp;<i class="fa fa-cloud"></i>&nbsp;<i class="fa fa-cloud"></i>
 category: poetry
 tags: ["wordpress", "of palate and polite", "instrument"]
 links:
