@@ -54,7 +54,7 @@ layout: default
             <span>{{ link[0] | capitalize }}</span>
         </a>
         {% elsif link[0] contains 'wordpress' %}
-        <span style="color:#159957;">{{ page.title | capitalize }}</span> in
+        <span style="color:#159957;"><a href="{{ link[1] }}" style="color:#159957;">{{ page.title | capitalize }}</a></span> in
         <span class="my-span-icon">
             <a href="{{ link[1] }}" aria-label="Wordpress"
             title="{{ page.title | capitalize }}" style="vertical-align: middle;">
