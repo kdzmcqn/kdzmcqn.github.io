@@ -27,6 +27,8 @@ layout: default
     <tt class="cats_tags" style="background-color: #9eeef9">{{ cats }}</tt>
     {%- elsif cats == "telecom" -%}
     <tt class="cats_tags" style="background-color: #f1e584">{{ cats }}</tt>
+    {%- elsif cats == "navigation" -%}
+    <tt class="cats_tags" style="background-color: #ffffff00">{{ cats }}</tt>
     {%- endif -%} 
     {%- endfor -%} 
     {%- for tag in page.tags -%}
