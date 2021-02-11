@@ -8,7 +8,6 @@ tags: ["python", "hollow", "rangoli"]
 
 # Hollow Rangoli
 
-{% highlight python %}
 ```py
 """
 n = 4
@@ -59,4 +58,3 @@ if __name__ == '__main__':
     n = int(input('size: '))
     hollowrangoli(n)
 ```
-{% endhighlight %}

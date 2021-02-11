@@ -16,7 +16,7 @@ while the three-gradient comprises darker ones.
 ## Array of Colors
 I pick sick random colors
 
-{% highlight javascript %}
+```js
 function getNewRandomColor() {
   var pheadcolors = ["#41eded", "#ed9898", "#60a2d3", "#c8c8c8", "#fff491"];
   var sheadcolors = ["#ed4141", "#98eded", "#d39160", "#00ffa1", "#919cff"];
@@ -54,12 +54,11 @@ function getNewRandomColor() {
     "#FDA6FF",
     "#FFFDA6",
   ];
-{% endhighlight %}
-
+```
 ## Array of Angles
 I pick basic angles then randomly choose colors and angles.
 
-{% highlight javascript %}
+```js
   var degs = ["0deg", "45deg", "60deg", "90deg", "120deg"];
   var deg = degs[Math.floor(Math.random() * degs.length)];
   var primary = pheadcolors[Math.floor(Math.random() * pheadcolors.length)];
@@ -68,19 +67,18 @@ I pick basic angles then randomly choose colors and angles.
   var dark_1 = dark_pri[Math.floor(Math.random() * dark_pri.length)];
   var dark_2 = dark_sec[Math.floor(Math.random() * dark_sec.length)];
   var dark_3 = dark_ter[Math.floor(Math.random() * dark_ter.length)];
-{% endhighlight %}
+```
 
 ## If things go wrong
 I just make sure that there's a header background if things fail. At least the colors will be matching even if its solid.
 
-{% highlight javascript %}
+```js
   $(".page-header").css("background-color", secondary);
-{% endhighlight %}
-
+```
 ## Execution
 Putting them together. Randomizing between the use of 2-gradient and 3-gradient colors. The 3-gradient colors are mostly dark.
 
-{% highlight javascript %}
+```js
   var head_type = Math.floor(Math.random() * Math.floor(2));
   if (head_type == 0) {
     $(".page-header").css(
@@ -103,22 +101,22 @@ Putting them together. Randomizing between the use of 2-gradient and 3-gradient 
     var primary = dark_3;
     var secondary = dark_1;
   }
-{% endhighlight %}
+```
 
 ## Tab Color
 Changes the tab colors in a mobile browser to match with the header. This is sick.
 
-{% highlight javascript %}
+```js
   $("meta").each(function () {
     if ($(this).attr("name") == "theme-color") {
       $(this).attr("content", primary);
     }
   });
-{% endhighlight %}
+```
 
 ## Icons
 
-{% highlight javascript %}
+```js
   $(document).ready(function () {
     $(".my-svg-icon").hover(
       function () {
@@ -132,11 +130,11 @@ Changes the tab colors in a mobile browser to match with the header. This is sic
     $(".my-svg-icon").css("fill", secondary);
   });
 }
-{% endhighlight %}
+```
 
 ## Refresh
 Everytime you refresh the page, this will change all the colors.
 
-{% highlight javascript %}
+```js
 document.onload = getNewRandomColor();
-{% endhighlight %}
+```
