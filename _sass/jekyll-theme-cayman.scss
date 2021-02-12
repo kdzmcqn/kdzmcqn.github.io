@@ -1,5 +1,5 @@
 @import "normalize";
-@import "rouge-github";
+@import "syntax";
 @import "variables";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 @import url("https://fonts.googleapis.com/css?family=Fira Mono");
@@ -72,7 +72,7 @@ a {
   border-width: 1px;
   border-radius: 1rem;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-  
+
   &:hover {
     color: #106e6d;
     text-decoration: none;
@@ -81,7 +81,7 @@ a {
   }
 
   + .btn {
-    margin-left: .5rem;
+    margin-left: 0.5rem;
   }
 
   @include large {
@@ -140,7 +140,7 @@ a {
 
   background-color: #00000070;
   background-blend-mode: overlay;
-  
+
   @include large {
     padding: 5rem 6rem;
   }
@@ -252,7 +252,7 @@ a {
     font-size: 0.9rem;
     color: $code-text-color;
     background-color: $code-bg-color;
-    border-radius: 0.3rem;
+    border-radius: 0.4rem;
   }
 
   pre {
@@ -264,7 +264,6 @@ a {
     word-wrap: normal;
     background-color: $code-bg-color;
     border: solid 1px $border-color;
-    border-radius: 0.3rem;
 
     > code {
       padding: 0;
@@ -287,13 +286,25 @@ a {
     }
   }
 
+  ::-webkit-scrollbar {
+    height: 4px;
+    width: 4px;
+    background-color: rgb(148, 148, 148);
+    // scrollbar-color: black;
+  }
+
+    ::-webkit-scrollbar-thumb {
+    background-color: rgb(119, 248, 102);
+  }
+  
+
+
   .highlight pre,
-  pre {
+  pre { 
     padding: 0.8rem;
     overflow: auto;
     font-size: 0.9rem;
     line-height: 1.45;
-    border-radius: 0.3rem;
     -webkit-overflow-scrolling: touch;
   }
 
@@ -386,7 +397,7 @@ a {
     border-radius: 0.5em;
     margin: 1px 1px 1px 1px;
     display: inline-block;
-    flex: 1 ;
+    flex: 1;
   }
   tt.cats {
     padding: 1px 4px;

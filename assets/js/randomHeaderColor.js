@@ -1,4 +1,5 @@
 function getNewRandomColor() {
+  
   var pheadcolors = ["#41eded", "#ed9898", "#60a2d3", "#c8c8c8", "#fff491"];
   var sheadcolors = ["#ed4141", "#98eded", "#d39160", "#00ffa1", "#919cff"];
 
@@ -69,11 +70,19 @@ function getNewRandomColor() {
     var primary = dark_3;
     var secondary = dark_1;
   }
+
   $("meta").each(function () {
     if ($(this).attr("name") == "theme-color") {
       $(this).attr("content", primary);
     }
   });
+
+  // $(".highlightScroll").each(function () {
+  //   if ($(this).attr("name") == "background-color") {
+  //     $(this).attr("content", primary);
+  //   }
+  // });
+
   $(document).ready(function () {
     $(".my-svg-icon").hover(
       function () {
@@ -83,14 +92,24 @@ function getNewRandomColor() {
         $(this).css("fill", primary);
       }
     );
-
     $(".my-svg-icon").css("fill", primary);
   });
+  
+  
+  
   // tags = document.getElementsByTagName('h3');
   // var i = 0;
   // while (tags[i]) {
-  //   tags[i].style.color = rand;
-  //   i++;
-  // }
-}
-document.onload = getNewRandomColor();
+    //   tags[i].style.color = rand;
+    //   i++;
+    // }
+  }
+  document.onload = getNewRandomColor();
+  // document.styleSheets[0].addRule("::-webkit-scrollbar", "background-color: primary;");
+  // for(var i = 0; i < document.styleSheets.length; i ++) {
+  //   var cursheet = document.styleSheets[i];
+  //   if(cursheet.title == 'jekyll-theme-cayman') {
+  //       cursheet.addRule("::-webkit-scrollbar", "background-color: primary;");
+  //   }
+// } 
+  
