@@ -41,7 +41,7 @@ tags: ["Windows 10", "MS Excel", "Macro", "Virtual Basic"]
 ![patientformobjs](/assets/img/coding/excel/assign_macro3.jpg)
 
 ![patientformobjs](/assets/img/coding/excel/edit.jpg)
-## demo
+## demo (still wrong because of the "row + 1)
 ![patientformobjs](/assets/img/coding/excel/demo.gif)
 ```vb
 Private Sub Form_Load()

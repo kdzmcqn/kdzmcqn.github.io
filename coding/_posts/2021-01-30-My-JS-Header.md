@@ -21,39 +21,9 @@ function getNewRandomColor() {
   var pheadcolors = ["#41eded", "#ed9898", "#60a2d3", "#c8c8c8", "#fff491"];
   var sheadcolors = ["#ed4141", "#98eded", "#d39160", "#00ffa1", "#919cff"];
 
-  var dark_pri = [
-    "#2A3742",
-    "#412A42",
-    "#005D63",
-    "#42352A",
-    "#2B422A",
-    "#438066",
-    "#A6FFFD",
-    "#FDA6FF",
-    "#FFFDA6",
-  ];
-  var dark_sec = [
-    "#2A3742",
-    "#412A42",
-    "#002C63",
-    "#42352A",
-    "#2B422A",
-    "#437C80",
-    "#A6FFFD",
-    "#FDA6FF",
-    "#FFFDA6",
-  ];
-  var dark_ter = [
-    "#2A3742",
-    "#412A42",
-    "#006337",
-    "#42352A",
-    "#2B422A",
-    "#438047",
-    "#A6FFFD",
-    "#FDA6FF",
-    "#FFFDA6",
-  ];
+  var dark_pri = [ "#2A3742", "#412A42", "#005D63", "#42352A", "#2B422A", "#438066", "#A6FFFD", "#FDA6FF", "#FFFDA6", ];
+  var dark_sec = [ "#2A3742", "#412A42", "#002C63", "#42352A", "#2B422A", "#437C80", "#A6FFFD", "#FDA6FF", "#FFFDA6", ];
+  var dark_ter = [ "#2A3742", "#412A42", "#006337", "#42352A", "#2B422A", "#438047", "#A6FFFD", "#FDA6FF", "#FFFDA6", ];
 ```
 ## Array of Angles
 I pick basic angles then randomly choose colors and angles.
@@ -88,15 +58,7 @@ Putting them together. Randomizing between the use of 2-gradient and 3-gradient 
   } else if (head_type == 1 && deg != "0deg") {
     $(".page-header").css(
       "background-image",
-      "linear-gradient(" +
-        deg +
-        ", " +
-        dark_3 +
-        ", " +
-        dark_2 +
-        ", " +
-        dark_1 +
-        ")"
+      "linear-gradient(" + deg + ", " + dark_3 + ", " + dark_2 + ", " + dark_1 + ")"
     );
     var primary = dark_3;
     var secondary = dark_1;
