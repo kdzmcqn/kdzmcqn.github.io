@@ -27,6 +27,15 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  {% include dependency.html name="flexbox" %}
+  <!-- dev-dependencies -->
+  {% if jekyll.environment == 'development' %}
+    {% include dependency.html name="live" %}
+  {% endif %}
+  <!-- custom page dependencies -->
+  {% for dependency in page.dependency %}
+    {% include dependency.html name=dependency %}
+  {% endfor %}
 </head>
 
 <body>
@@ -34,6 +43,7 @@
     {%- include header.html -%}
   </header>
   <main id="content" class="main-content" role="main">
+    
     {{ content }}
     {%- include footer.html -%}
   </main>

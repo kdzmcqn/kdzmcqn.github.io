@@ -531,3 +531,10 @@ a {
 .site-footer-credits {
   color: $blockquote-text-color;
 }
+
+.p5-sketch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}

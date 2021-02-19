@@ -27,3 +27,9 @@ header_nav : ["GitHub", "Twitter", "Wordpress"]
 
 markdown: kramdown
 highlighter: rouge
+
+plugins: 
+  - jekyll-mermaid
+gems: [jekyll-mermaid]
+mermaid:
+  src: "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"
