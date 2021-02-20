@@ -1,5 +1,5 @@
-{% for dependency in site.data.dependency %}
-    {% if dependency.name == include.name %}
-    {{dependency.element}}
-    {% endif %}
-{% endfor %}
+{%- for dependency in site.data.dependency -%}
+    {%- if dependency.name == include.name -%}
+        {{- dependency.element -}}
+    {%- endif -%} 
+{%- endfor -%}

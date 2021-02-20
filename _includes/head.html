@@ -25,13 +25,15 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   
-  {% include dependency.html name="flexbox" %}
+  {%- include dependency.html name="flexbox" -%}
   <!-- dev-dependencies -->
-  {% if jekyll.environment == 'development' %}
-    {% include dependency.html name="live" %}
-  {% endif %}
+  {%- if jekyll.environment == 'development' -%}
+    {%- include dependency.html name="live" -%}
+  {%- endif -%}
   <!-- custom page dependencies -->
-  {% for dependency in page.dependency %}
-    {% include dependency.html name=dependency %}
-  {% endfor %}
+  {%- for x in page.dependency -%}
+      {%- if x != "mermaid" -%}
+          {%- include dependency.html name=x -%}
+      {%- endif -%}
+  {%- endfor -%}
 </head>
