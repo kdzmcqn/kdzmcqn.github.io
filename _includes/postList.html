@@ -7,31 +7,31 @@
         <div class="cats" style="display: inline-block; flex-wrap: wrap; flex: 0 1 150px">
             {%- for cats in post.category -%} 
                 {%- if cats == "algo" -%}
-                    <tt style="background-color: #73ad9c">{{ cats }}</tt>
+                    <tt style="background-color: #73ad9c">{{- cats -}}</tt>
                 {%- elsif cats == "art" -%}
-                    <tt style="background-color: #d2d2d2">{{ cats }}</tt>
+                    <tt style="background-color: #d2d2d2">{{- cats -}}</tt>
                 {%- elsif cats == "biomed" -%}
-                    <tt style="background-color: #c4b2ff">{{ cats }}</tt>
+                    <tt style="background-color: #c4b2ff">{{- cats -}}</tt>
                 {%- elsif cats == "coding" -%}
-                    <tt style="background-color: #50afad">{{ cats }}</tt>
+                    <tt style="background-color: #50afad">{{- cats -}}</tt>
                 {%- elsif cats == "ML" -%}
-                    <tt style="background-color: #ffa978">{{ cats }}</tt>
+                    <tt style="background-color: #ffa978">{{- cats -}}</tt>
                 {%- elsif cats == "personal" -%}
-                    <tt style="background-color: #d2d2d2">{{ cats }}</tt>
+                    <tt style="background-color: #d2d2d2">{{- cats -}}</tt>
                 {%- elsif cats == "poetry" -%}
-                    <tt style="background-color: #ffffff00">{{ cats }}</tt>
+                    <tt style="background-color: #ffffff00">{{- cats -}}</tt>
                 {%- elsif cats == "RF" -%}
-                    <tt style="background-color: #f37575">{{ cats }}</tt>
+                    <tt style="background-color: #f37575">{{- cats -}}</tt>
                 {%- elsif cats == "semicon" -%}
-                    <tt style="background-color: #9eeef9">{{ cats }}</tt>
+                    <tt style="background-color: #9eeef9">{{- cats -}}</tt>
                 {%- elsif cats == "telecom" -%}
-                    <tt style="background-color: #f1e584">{{ cats }}</tt>
+                    <tt style="background-color: #f1e584">{{- cats -}}</tt>
                 {%- elsif cats == "studies" -%}
-                    <tt style="background-color: #f29751">{{ cats }}</tt>
+                    <tt style="background-color: #f29751">{{- cats -}}</tt>
                 {%- elsif cats == "navigation" -%}
-                    <tt style="background-color: #ffffff00">{{ cats }}</tt>
+                    <tt style="background-color: #ffffff00">{{- cats -}}</tt>
                 {%- elsif cats == "civil" -%}
-                    <tt style="background-color: #f2ed65">{{ cats }}</tt>
+                    <tt style="background-color: #f2ed65">{{- cats -}}</tt>
                 {%- endif -%} 
             {%- endfor -%}
         </div>

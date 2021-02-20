@@ -37,7 +37,7 @@ function getNewRandomColor() {
     "#FFFDA6",
   ];
 
-  var degs = ["0deg", "45deg", "60deg", "90deg", "120deg"];
+  var degs = ["0deg", "45deg", "60deg", "90deg", "120deg", "135deg"];
   var deg = degs[Math.floor(Math.random() * degs.length)];
   var primary = pheadcolors[Math.floor(Math.random() * pheadcolors.length)];
   var secondary = sheadcolors[Math.floor(Math.random() * sheadcolors.length)];
