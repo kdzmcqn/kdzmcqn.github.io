@@ -696,8 +696,11 @@
   <script src='/assets/js/trackViewport.js'></script>
   <!-- <script src='/assets/js/svgHoverColor.js>'></script> -->
 
-<script src="/assets/js/mermaid/dist/mermaid.js"></script>
-  <script>
+<!-- <script src="/assets/js/mermaid/dist/mermaid.js"></script> -->
+  {% for dependency in page.dependency %}
+    {% include dependency.html name=dependency %}
+  {% endfor %}
+<script>
     mermaid.initialize({
       theme: 'forest',
       // themeCSS: '.node rect { fill: red; }',

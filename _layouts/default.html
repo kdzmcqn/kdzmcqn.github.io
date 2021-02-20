@@ -14,7 +14,10 @@
   </main>
   <script src='/assets/js/randomHeaderColor.js'></script>
   <script src='/assets/js/trackViewport.js'></script>
-  <!-- <script src='/assets/js/svgHoverColor.js>'></script> -->
+
+  {% for dependency in page.dependency %}
+    {% include dependency.html name=dependency %}
+  {% endfor %}
 </body>
 
 </html>
