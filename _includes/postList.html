@@ -19,7 +19,7 @@
                 {%- elsif cats == "personal" -%}
                     <tt style="background-color: #d2d2d2">{{- cats -}}</tt>
                 {%- elsif cats == "poetry" -%}
-                    <tt style="background-color: #ffffff00">{{- cats -}}</tt>
+                    <tt style="background-color: #ffffff00; border: 1px solid black">{{- cats -}}</tt>
                 {%- elsif cats == "RF" -%}
                     <tt style="background-color: #f37575">{{- cats -}}</tt>
                 {%- elsif cats == "semicon" -%}
@@ -37,7 +37,7 @@
         </div>
         &#8881;
         <div class="divpost_title">
-            <a href="{{ post.url }}">{{ post.title }}</a>
+            <a href="{{- post.url -}}">{{- post.title -}}</a>
         </div>
     </li>
     {%- endfor -%}
