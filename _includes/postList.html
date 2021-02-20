@@ -1,5 +1,5 @@
 <ul id="post_ul" style="list-style: none">
-    {%- for post in site.posts | compact -%}
+    {%- for post in site.ventures reversed | compact -%}
     <li style="display: flex; flex-wrap: wrap">
         <div class="catdate">
             <tt>{{ post.date | date_to_string }}</tt>

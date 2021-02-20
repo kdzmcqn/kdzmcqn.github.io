@@ -33,3 +33,7 @@ plugins:
 gems: [jekyll-mermaid]
 mermaid:
   src: "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"
+
+collections:
+  ventures:
+    output: true

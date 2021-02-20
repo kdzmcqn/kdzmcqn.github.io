@@ -49,12 +49,12 @@ layout: default
         {%- for link in hash -%}
         {%- if link[0] contains 'source' -%}
         <a href=" {{- link[1] | absolute_url -}} " class="btn">
-            <img src="{{- "/source.svg" -}}" width="20px">
+            <img src="{{- "/assets/img/icons/source.svg" -}}" width="20px">
             <span>{{- link[0] | capitalize -}}</span>
         </a>
         {%- elsif link[0] contains 'download' -%}
         <a href=" {{- link[1] -}} " class="btn">
-            <img rel="icon" src="{{- "/download.svg" -}}" width="20px">
+            <img rel="icon" src="{{- "/assets/img/icons/download.svg" -}}" width="20px">
             <span>{{- link[0] | capitalize -}}</span>
         </a>
         {%- elsif link[0] contains 'wordpress' -%}
