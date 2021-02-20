@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{- site.lang | default: "en-US" -}}">
 
 
   {%- include head.html -%}
@@ -17,7 +16,7 @@
     {%- include header.html -%}
   </header>
   <main id="content" class="main-content" role="main">
-    {{ content }}
+    {{- content -}}
 
     <div class="mermaid">
       info
@@ -697,9 +696,9 @@
   <!-- <script src='/assets/js/svgHoverColor.js>'></script> -->
 
 <!-- <script src="/assets/js/mermaid/dist/mermaid.js"></script> -->
-  {% for dependency in page.dependency %}
-    {% include dependency.html name=dependency %}
-  {% endfor %}
+  {%- for dependency in page.dependency -%}
+    {%- include dependency.html name=dependency -%}
+  {%- endfor -%}
 <script>
     mermaid.initialize({
       theme: 'forest',
