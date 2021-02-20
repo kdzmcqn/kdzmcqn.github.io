@@ -19,9 +19,9 @@
 
 - name: mermaid
   element:
-    - <script scr="/assets/js/mermaid/dist/mermaid.core.js"></script>
     - <script scr="/assets/js/mermaid/dist/mermaid.js"></script>
-    - <script scr="/assets/js/mermaid/dist/mermaid.js.map"></script>
-    - <script src="/assets/js/mermaid/dist/mermaid.min.js"></script>
-    - <script src="/assets/js/mermaid/dist/mermaid.min.js.map"></script>
-    - <script src="/assets/js/mermaid/dist/mermaid.core.min.js.map"></script>
+    # - <script scr="/assets/js/mermaid/dist/mermaid.core.js"></script>
+    # - <script scr="/assets/js/mermaid/dist/mermaid.js.map"></script>
+    # - <script src="/assets/js/mermaid/dist/mermaid.min.js"></script>
+    # - <script src="/assets/js/mermaid/dist/mermaid.min.js.map"></script>
+    # - <script src="/assets/js/mermaid/dist/mermaid.core.min.js.map"></script>
