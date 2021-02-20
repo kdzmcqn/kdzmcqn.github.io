@@ -34,8 +34,10 @@ let myp51 = new p5((sketch) => {
     var xoff = start;
     for (var x = 0; x < sketch.width; x++){
       sketch.stroke(255);
-      // var y = sketch.map(sketch.noise(xoff), 0, 1, 0, sketch.height);
-      var y = sketch.noise(xoff) * sketch.height;
+      var n = sketch.map(sketch.noise(xoff), 0, 1, 0, sketch.height);
+      var s = sketch.map(sketch.sin(xoff), -1, 1, -50, 50);
+      var y = n + s;
+      // var y = sketch.noise(xoff) * 100 + sketch.sin(xoff) * (sketch.height/2) + sketch.height/2;
       sketch.vertex(x, y);
       xoff += inc;
     }
