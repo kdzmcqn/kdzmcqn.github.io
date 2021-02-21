@@ -1,8 +1,9 @@
 <ul id="post_ul" style="list-style: none">
-    {%- for post in site.ventures reversed | compact -%}
+    {%- assign sorted_date = site.ventures | sort: 'date' | reverse -%}
+    {%- for post in sorted_date | compact -%}
     <li style="display: flex; flex-wrap: wrap">
         <div class="catdate">
-            <tt>{{ post.date | date_to_string }}</tt>
+            <tt>{{- post.date | date_to_string -}}</tt>
         </div>
         <div class="cats" style="display: inline-block; flex-wrap: wrap; flex: 0 1 150px">
             {%- for cats in post.category -%} 
