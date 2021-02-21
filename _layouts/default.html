@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="{{- site.lang | default: "en-US" -}}">
-
+  
   {%- include head.html -%}
   
-<body>
-  <header>
-    {%- include header.html -%}
-  </header>
-  <main id="content" class="main-content" role="main">
-    
-    {{- content -}}
-    {%- include footer.html -%}
-  </main>
-  <script src='/assets/js/randomHeaderColor.js'></script>
-  <script src='/assets/js/trackViewport.js'></script>
+  <body>
+    <header>
+      {%- include header.html -%}
+    </header>
+    <main id="content" class="main-content" role="main">
+      
+      {{- content -}}
+      {%- include footer.html -%}
+    </main>
+    <!-- <script src='/assets/js/randomHeaderColor.js'></script> -->
+    <script src='/assets/js/trackViewport.js'></script>
 
   {%-for dependency in page.dependency -%}
   {%- if dependency == "mermaid" -%}

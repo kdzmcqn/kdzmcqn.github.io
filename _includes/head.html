@@ -1,6 +1,6 @@
 <head>
   <!-- Favicon -->
-  <link rel="icon" href="{{ "/assets/img/icons/favicon.ico" | absolute_url }}">
+  <link rel="icon" href="{{ " /assets/img/icons/favicon.ico" | absolute_url }}">
 
   <!-- Google Analytics -->
   {%- if site.google_analytics -%}
@@ -24,11 +24,12 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="stylesheet" href="{{- '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url -}}">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  
+
+  <script src='/assets/js/randomHeaderColor.js'></script>
   {%- include dependency.html name="flexbox" -%}
   <!-- dev-dependencies -->
   {%- if jekyll.environment == 'development' -%}
-    {%- include dependency.html name="live" -%}
+      {%- include dependency.html name="live" -%}
   {%- endif -%}
   <!-- custom page dependencies -->
   {%- for x in page.dependency -%}
