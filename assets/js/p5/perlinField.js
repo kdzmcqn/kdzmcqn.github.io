@@ -8,16 +8,16 @@ var particles = [];
 var flowfield;
 
 function setup() {
-  let cnv = createCanvas(300, 300);
+  let cnv = createCanvas(1200, 675);
   cnv.parent("perlin-canvas");
   cols = floor(width / scl);
   rows = floor(height / scl);
   fr = createP("");
   flowfield = new Array(cols * rows);
-  for (var i = 0; i < 500; i++) {
+  for (var i = 0; i < 10; i++) {
     particles[i] = new Particle();
   }
-  background(255);
+  background(0);
 };
 
 draw = () => {
@@ -26,7 +26,7 @@ draw = () => {
     var xoff = 0;
     for (var x = 0; x < cols; x++) {
       var index = x + y * cols;
-      var angle = noise(xoff, yoff, zoff) * two_pi * 3;
+      var angle = noise(xoff, yoff, zoff) * two_pi;
       var v = p5.Vector.fromAngle(angle);
       v.setMag(0.5);
       flowfield[index] = v;
@@ -34,7 +34,7 @@ draw = () => {
       // fill(sketch.random(255));
       // fill(r);
       // rect(x * scl, y * scl, scl, scl);
-      stroke(0, 50);
+      // stroke(0, 50);
       // push();
       // translate(x * scl, y * scl);
       // rotate(v.heading());

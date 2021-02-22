@@ -33,7 +33,7 @@ function Particle() {
     
     this.show = function () {
         setMetaColor = color(meta_primary_color);
-        setMetaColor.setAlpha(20);
+        setMetaColor.setAlpha(10);
         stroke(setMetaColor);
         strokeWeight(1);
         line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y);
