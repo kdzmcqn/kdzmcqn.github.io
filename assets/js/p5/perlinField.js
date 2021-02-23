@@ -1,44 +1,50 @@
 var inc = 0.2;
-var scl = 10;
+var scl = 15;
 var cols, rows;
-var fr;
 var two_pi = 6.28318530718;
 var zoff = 0;
-var particles = [];
 var flowfield;
+var particles = [];
+var fr;
 
 function setup() {
-  let cnv = createCanvas(1200, 675);
+  // createCanvas(500, 500);
+  cnv = createCanvas(500, 500);
   cnv.parent("perlin-canvas");
   cols = floor(width / scl);
   rows = floor(height / scl);
   fr = createP("");
   flowfield = new Array(cols * rows);
-  for (var i = 0; i < 10; i++) {
+  for (var i = 0; i < 500; i++) {
     particles[i] = new Particle();
   }
   background(0);
-};
+}
 
-draw = () => {
+function draw() {
+  // if (frameCount === 1) {
+  //   capturer.start();
+  // }
+
   var yoff = 0;
   for (var y = 0; y < rows; y++) {
     var xoff = 0;
     for (var x = 0; x < cols; x++) {
       var index = x + y * cols;
-      var angle = noise(xoff, yoff, zoff) * two_pi;
+      var angle = noise(xoff, yoff, zoff) * two_pi * 3;
       var v = p5.Vector.fromAngle(angle);
-      v.setMag(0.5);
+      v.setMag(4);
       flowfield[index] = v;
       xoff += inc;
-      // fill(sketch.random(255));
+      // fill(random(255));
       // fill(r);
-      // rect(x * scl, y * scl, scl, scl);
       // stroke(0, 50);
+
+      // rect(x * scl, y * scl, scl, scl);
       // push();
+      // strokeWeight(1);
       // translate(x * scl, y * scl);
       // rotate(v.heading());
-      // strokeWeight(1);
       // line(0, 0, scl, 0);
       // pop();
     }
@@ -51,5 +57,14 @@ draw = () => {
     particles[i].edges();
     particles[i].show();
   }
-  fr.html(floor(frameRate()));
-};
+  fr.html("FPS: " + floor(frameRate()));
+  // console.log(frameRate());
+  // function render(){
+  // if (frameCount < 60) {
+  //   capturer.capture(cnv)
+  // } else if (frameCount === 60) {
+  //   capturer.save();
+  //   capturer.stop();
+  // }
+  // }
+}

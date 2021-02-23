@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "mermaid"
-description: "tried"
+title: "How I sehdule my life"
+description: "to become organized"
 category: coding
 tags: ["mermaid", "markdown", "api", "js"]
 dependency:
