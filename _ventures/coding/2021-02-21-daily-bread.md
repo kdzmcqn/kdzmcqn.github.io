@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "How I sehdule my life"
+title: "How I schedule my life"
 description: "to become organized"
 category: coding
 tags: ["mermaid", "markdown", "api", "js"]
 dependency:
-  - mermaid
----
+  - mermai-
 
 <div class="mermaid">
 %%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1f1d1e88'}}}%%
@@ -27,7 +26,7 @@ gantt
   Completed task            :done,    des1, 2014-01-06,2014-01-08
   Active task               :active,  des2, 2014-01-09, 3d
   Future task               :         des3, after des2, 5d
-  Future task2               :         des4, after des3, 5d
+  Future task2              :         des4, after des3, 5d
   
   section Critical tasks
   Completed task in the critical line :crit, done, 2014-01-06,24h
