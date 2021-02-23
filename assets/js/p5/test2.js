@@ -9,7 +9,7 @@ var ball = {
 };
 
 function setup() {
-  let cnv = createCanvas(600, 400);
+  var cnv = createCanvas(600, 400);
   canvas = cnv.canvas;
 
   capturer.start();
@@ -22,14 +22,12 @@ function draw() {
   bounce();
   display();
 
-  let secondsElapsed = frameCount/gifLength;
+  //   let secondsElapsed = frameCount/gifLength;
 
-  if (secondsElapsed >= 3) {
+  if (frameCount < gifLength) {
     capturer.capture(canvas);
   } else if (frameCount == gifLength) {
     capturer.stop();
-    capturer.save();
-    noLoop();
   }
 }
 
