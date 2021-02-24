@@ -18,8 +18,9 @@
 //===================================================
 // User-modifiable global variables. 
 var myNickname = "nickname";
-var nFramesInLoop = 10;
+var nFramesInLoop = 100;
 var bEnableExport = true;
+var fr = 3;
 
 // Other global variables you don't need to touch.
 var nElapsedFrames;
@@ -29,6 +30,7 @@ var theCanvas;
 //===================================================
 function setup() {
   theCanvas = createCanvas(500, 200);
+  frameRate(fr);
   bRecording = false;
   nElapsedFrames = 0;
 }
