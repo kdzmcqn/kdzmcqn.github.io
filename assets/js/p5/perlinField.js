@@ -99,11 +99,11 @@ function draw() {
       particles[i].update();
       particles[i].edges();
       particles[i].show();
-      if (percentCompleteFraction == 0.9) {
-        noLoop();
-      }
+      // if (percentCompleteFraction == 0.9) {
+        // noLoop();
+      // }
     }
-    // fr.html("FPS: " + floor(frameRate()));
-    fr.html("FPS: " + floor(frameRate()) + " percent: " + percent);
+    fr.html("FPS: " + floor(frameRate()));
+    // fr.html("FPS: " + floor(frameRate()) + " percent: " + percent);
   }
 }
