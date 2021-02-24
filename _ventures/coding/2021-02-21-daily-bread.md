@@ -5,10 +5,11 @@ description: "to become organized"
 category: coding
 tags: ["mermaid", "markdown", "api", "js"]
 dependency:
-  - mermai-
+  - mermaid
+---
 
 <div class="mermaid">
-%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1f1d1e88'}}}%%
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1f1d1e88'}, 'overflow': 'visible'}}%%
 graph LR
     A --- B
     B-->C[fa:fa-ban forbidden]

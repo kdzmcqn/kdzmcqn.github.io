@@ -18,8 +18,8 @@
 //===================================================
 // User-modifiable global variables. 
 var myNickname = "nickname";
-var nFramesInLoop = 120;
-var bEnableExport = false;
+var nFramesInLoop = 10;
+var bEnableExport = true;
 
 // Other global variables you don't need to touch.
 var nElapsedFrames;
@@ -62,13 +62,15 @@ function draw() {
   // Note that the output images may be 2x large if you have a Retina mac. 
   // You can compile these frames into an animated GIF using a tool like: 
   if (bRecording && bEnableExport) {
-    var frameOutputFilename = myNickname + "_frame_" + nf(nElapsedFrames, 4) + ".png";
+    var frameOutputFilename = myNickname + "_frame_" + nf(nElapsedFrames, 4) + ".jpg";
     print("Saving output image: " + frameOutputFilename);
-    saveCanvas(theCanvas, frameOutputFilename, 'png');
+    saveCanvas(theCanvas, frameOutputFilename, 'jpg');
+    noLoop();
     nElapsedFrames++;
-
+    loop();
     if (nElapsedFrames >= nFramesInLoop) {
       bRecording = false;
+      noLoop();
     }
   }
 }
