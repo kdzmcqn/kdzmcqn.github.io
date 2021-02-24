@@ -67,9 +67,7 @@ function draw() {
     var frameOutputFilename = myNickname + "_frame_" + nf(nElapsedFrames, 4) + ".jpg";
     print("Saving output image: " + frameOutputFilename);
     saveCanvas(theCanvas, frameOutputFilename, 'jpg');
-    noLoop();
     nElapsedFrames++;
-    loop();
     if (nElapsedFrames >= nFramesInLoop) {
       bRecording = false;
       noLoop();
