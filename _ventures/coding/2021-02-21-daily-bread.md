@@ -7,9 +7,13 @@ tags: ["mermaid", "markdown", "api", "js"]
 dependency:
   - mermaid
 ---
-
+<style>
+.svg {
+  overflow: visible;
+}
+</style>
 <div class="mermaid">
-%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1f1d1e88'}, 'overflow': 'visible'}}%%
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1f1d1e88'}}}%%
 graph LR
     A --- B
     B-->C[fa:fa-ban forbidden]
