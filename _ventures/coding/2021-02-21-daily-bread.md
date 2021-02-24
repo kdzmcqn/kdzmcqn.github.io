@@ -9,7 +9,7 @@ dependency:
 ---
 <style>
 .svg {
-  overflow: visible;
+  overflow: auto;
 }
 </style>
 <div class="mermaid">
