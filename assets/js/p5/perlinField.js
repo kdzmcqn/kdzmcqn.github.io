@@ -7,25 +7,25 @@ var flowfield;
 var particles = [];
 var fr;
 
-var myNickname = "nickname";
+var myNickname = "andro";
 var nFramesInLoop = 200;
-var bEnableExport = true;
-var fr = 4;
+var bEnableExport = false;
+// var fr = 4;
 
 var nElapsedFrames;
 var bRecording;
 var theCanvas;
 function setup() {
-  cnv = createCanvas(300, 300);
+  cnv = createCanvas(1200, 675);
   cnv.parent("perlin-canvas");
-  frameRate(fr);
+  // frameRate(fr);
   bRecording = false;
   nElapsedFrames = 0;
   cols = floor(width / scl);
   rows = floor(height / scl);
   fr = createP("");
   flowfield = new Array(cols * rows);
-  for (var i = 0; i < 500; i++) {
+  for (var i = 0; i < 1000; i++) {
     particles[i] = new Particle();
   }
   background(255);
