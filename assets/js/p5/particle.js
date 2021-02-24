@@ -32,9 +32,9 @@ function Particle() {
     };
     
     this.show = function () {
-        // setMetaColor = color(meta_primary_color);
-        setMetaColor = color("red");
-        setMetaColor.setAlpha(20);
+        setMetaColor = color(meta_primary_color);
+        // setMetaColor = color("red");
+        setMetaColor.setAlpha(25);
         stroke(setMetaColor);
         strokeWeight(1);
         line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y);
