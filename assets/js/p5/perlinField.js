@@ -10,15 +10,15 @@ var fr;
 var myNickname = "andro";
 var nFramesInLoop = 200;
 var bEnableExport = false;
-// var fr = 4;
+// var frame_rate = 4;
 
 var nElapsedFrames;
 var bRecording;
-var theCanvas;
+var cnv;
 function setup() {
   cnv = createCanvas(1200, 675);
   cnv.parent("perlin-canvas");
-  // frameRate(fr);
+  // frameRate(frame_rate);
   bRecording = false;
   nElapsedFrames = 0;
   cols = floor(width / scl);
@@ -60,7 +60,7 @@ function draw() {
   if (bRecording && bEnableExport) {
     var frameOutputFilename = myNickname + "_frame_" + nf(nElapsedFrames, 4) + ".jpg";
     print("Saving output image: " + frameOutputFilename);
-    saveCanvas(theCanvas, frameOutputFilename, "jpg");
+    saveCanvas(cnv, frameOutputFilename, "jpg");
     nElapsedFrames++;
     if (nElapsedFrames >= nFramesInLoop) {
       bRecording = false;
