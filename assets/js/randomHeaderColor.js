@@ -78,11 +78,6 @@ function getNewRandomColor() {
     }
   });
   
-  // $(".highlightScroll").each(function () {
-  //   if ($(this).attr("name") == "background-color") {
-    //     $(this).attr("content", primary);
-  //   }
-  // });
 
   $(document).ready(function () {
     $(".my-svg-icon").hover(
@@ -96,15 +91,6 @@ function getNewRandomColor() {
     $(".my-svg-icon").css("fill", primary);
   });
   
-  // tags = document.getElementsByTagName('h3');
-  // var i = 0;
-  // while (tags[i]) {
-  //   tags[i].style.color = rand;
-  //   i++;
-  // }
-  // var yo = window.location.pathname;
-  // $(document).ready(function () {
-  //   $('#path_of_the').text("<p>" + yo + "</p");
-  // });
 }
+
 document.onload = window.location.pathname === "/" ? null : getNewRandomColor();
