@@ -5,7 +5,7 @@ locale                   : "en"
 title                    : "Leandro Lapeña"
 title_separator          : "-"
 name                     : "Leandro Lapeña"
-description              : "Electronics Engineer"
+occupation               : "Electronics Engineer"
 url                      : "https://kdzmcqn.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 
 github:

@@ -1,9 +1,10 @@
 ---
 layout: post
 titel: Input Date and Time in Excel Hassle-free
-description: "Simple tutorial for using Excel Macros and VBA"
+# description: "Simple tutorial for using Excel Macros and VBA"
 category: coding
 tags: ["Windows 10", "MS Excel", "Macro", "Virtual Basic"]
+header: "/assets/img/poetry/white.jpg"
 ---
 # Title
 ## yep

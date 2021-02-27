@@ -2,10 +2,12 @@
 <html lang="{{- site.lang | default: "en-US" -}}">
   
   {%- include head.html -%}
-  
+ 
   <body>
     <header>
-      {%- include header.html -%}
+     {%- if page.layout == 'post' -%}
+     {%- include header.html -%}
+     {%- endif-%} 
     </header>
     <main id="content" class="main-content" role="main">
       

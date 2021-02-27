@@ -1,5 +1,5 @@
-var inc = 0.2;
-var scl = 15;
+var inc = 0.4;
+var scl = 20;
 var cols, rows;
 var two_pi = 6.28318530718;
 var zoff = 0;
@@ -25,7 +25,7 @@ function setup() {
   rows = floor(height / scl);
   fr = createP("");
   flowfield = new Array(cols * rows);
-  for (var i = 0; i < 1000; i++) {
+  for (var i = 0; i < 2000; i++) {
     particles[i] = new Particle();
   }
   background(255);
@@ -67,7 +67,6 @@ function draw() {
       noLoop();
     }
   }
-
   function renderMyDesign(percent) {
     var yoff = 0;
     for (var y = 0; y < rows; y++) {
@@ -76,7 +75,7 @@ function draw() {
         var index = x + (y * cols);
         var angle = noise(xoff, yoff, zoff) * two_pi * 3;
         var v = p5.Vector.fromAngle(angle);
-        v.setMag(4);
+        v.setMag(5);
         flowfield[index] = v;
         xoff += inc;
         // fill(random(255));
