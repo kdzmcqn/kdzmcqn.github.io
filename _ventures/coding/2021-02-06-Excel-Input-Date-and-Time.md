@@ -21,7 +21,7 @@ Someone I know who's currently studying in medicine sent an example of their for
 ![patientformobjs](/assets/img/coding/excel/patient_form_objects.jpg)
 
 # Tutorial
-With this tutorial—however not much, since only two cells will be filled automatically—it will teach you how to automate and become at least familiar with basic programming. May you find the joy and open doors for you in programming, for the worlds is evolving towards computer technology.
+With this tutorial—however not much, since only two cells will be filled automatically—it will teach you how to automate and become at least familiar with basic programming. May you find the joy and open doors for you in programming, because the world is evolving towards computer technology.
 
 ## Create a shape object
 You can create a shape by goint to the Insert Tab
@@ -80,6 +80,46 @@ End If
     ActiveCell.Value = Now
     Cells(current_row, 7).Value = TimeValue(Now)
 End Sub
+
+
+
+Sub dateTimebutton_Click()
+
+Set myDocument = Worksheets(1)
+myDocument.Shapes("dateTimebutton").Fill.ForeColor.RGB = RGB(255, 0, 0)
+
+Application.OnTime Now + TimeValue("00:00:01"), "proc"
+
+Dim current_row As Integer
+
+If IsEmpty(ActiveCell.Value) And ActiveCell.Column = 6 Then
+    current_row = ActiveCell.Row
+Else
+    current_row = ActiveCell.Row
+End If
+    ActiveCell.Value = Now
+    Cells(current_row, 7).Value = TimeValue(Now)
+   
+End Sub
+
+Private Sub LastUsedRow()
+
+    Dim last_row As Integer
+
+    last_row = Cells(Rows.Count, 1).End(xlUp).Row
+
+
+    Debug.Print last_row
+End Sub
+
+Private Sub proc()
+Set myDocument = Worksheets(1)
+myDocument.Shapes("dateTimebutton").Fill.ForeColor.RGB = RGB(0, 255, 255)
+End Sub
+
+
+
+
 ```
 
 Google app scripts
