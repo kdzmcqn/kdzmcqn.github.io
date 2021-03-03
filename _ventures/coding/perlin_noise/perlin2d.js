@@ -11,7 +11,7 @@ let myp51 = new p5((sketch) => {
     for (var y = 0; y < sketch.height; y++) {
       var xoff = 0;
       for (var x = 0; x < sketch.width; x++) {
-        var index = (x + y * sketch.width) * 4;
+        var index = (x + (y * sketch.width)) * 4;
         var r = sketch.noise(xoff, yoff) * 255;
         sketch.pixels[index + 0] = r;
         sketch.pixels[index + 1] = r;

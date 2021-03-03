@@ -4,61 +4,61 @@ title: Automate Date and Time Inputs with Excel Shape Object Button
 description: "Simple tutorial for using Excel Macros and VBA"
 category: coding
 tags: ["Windows 10", "MS Excel", "Macro", "Virtual Basic"]
-header: "/assets/img/poetry/white.jpg"
+header: "/./img/poetry/white.jpg"
 ---
-![intro](/assets/img/coding/excel/intro.gif)
+![intro](./img/intro.gif)
 
 # Motivation
 It is tiring to input the date and time manually over and over again. For those who work in healthcare
 who have to fill up huge forms or tables, it will give you less headache if you could at least type in the date and time. Without the hassle of pressing the shift button just to type in the colons, then you have to edit some of it in the formula bar, check up the time then—what day is it? So yeah... this is how
 you'll take some burden off your shoulders.
 
-<img src="/assets/img/coding/excel/patient_form_table.jpg" alt="patientform" height="104.196"/>
+<./img src="img/patient_form_table.jpg" alt="patientform" height="104.196"/>
 
 ## Patient Form Example
 Someone I know who's currently studying in medicine sent an example of their forms that have to be filled up. Imagine that they have been filling this up manually. She said they were only taught up to the basic use of excel(she made this form). Considering that they will be using Excel for most part of their job, it is indeed unfortunate that they could only know the basic use of it.
 
-![patientformobjs](/assets/img/coding/excel/patient_form_objects.jpg)
+![patientformobjs](./img/patient_form_objects.jpg)
 
 # Tutorial
 With this tutorial—however not much, since only two cells will be filled automatically—it will teach you how to automate and become at least familiar with basic programming. May you find the joy and open doors for you in programming, because the world is evolving towards computer technology.
 
-## Create a shape object
+## Create a shape oject
 You can create a shape by goint to the Insert Tab
-![patientformobjs](/assets/img/coding/excel/patient_form_1.jpg)
+![patientformobjs](./img/patient_form_1.jpg)
 
 ## Right-click the shape object and Assign Macro
-![patientformobjs](/assets/img/coding/excel/assign_macro.jpg)
+![patientformobjs](./img/assign_macro.jpg)
 
 ## Click New
-![patientformobjs](/assets/img/coding/excel/assign_macro2.jpg)
+![patientformobjs](./img/assign_macro2.jpg)
 
 ## Macro Editor
-![patientformobjs](/assets/img/coding/excel/vba_excel_window.jpg)
+![patientformobjs](./img/vba_excel_window.jpg)
 
 ## Rename the Object
-![patientformobjs](/assets/img/coding/excel/find_and_select.jpg)
+![patientformobjs](./img/find_and_select.jpg)
 
 ## Go to the Selection Pane
-![patientformobjs](/assets/img/coding/excel/find_and_select2.jpg)
+![patientformobjs](./img/find_and_select2.jpg)
 
 ## Rename the shape
-![patientformobjs](/assets/img/coding/excel/selection.jpg)
+![patientformobjs](./img/selection.jpg)
 
 ## Change the name of the object back in the macro editor
-![patientformobjs](/assets/img/coding/excel/selection_2.jpg)
+![patientformobjs](./img/selection_2.jpg)
 
-![patientformobjs](/assets/img/coding/excel/oval1_click.jpg)
+![patientformobjs](./img/oval1_click.jpg)
 
 ## Save as .xlsm
-![patientformobjs](/assets/img/coding/excel/datetimebutton.jpg)
+![patientformobjs](./img/datetimebutton.jpg)
 
-![patientformobjs](/assets/img/coding/excel/click_no.jpg)
+![patientformobjs](./img/click_no.jpg)
 
 ## Go back to the button and assign the name you chose as the macro
-![patientformobjs](/assets/img/coding/excel/savetoxlsm.jpg)
+![patientformobjs](./img/savetoxlsm.jpg)
 
-![patientformobjs](/assets/img/coding/excel/assign_macro3.jpg)
+![patientformobjs](./img/assign_macro3.jpg)
 
 # The Code Discussion
 

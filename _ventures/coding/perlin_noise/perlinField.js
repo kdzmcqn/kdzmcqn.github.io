@@ -16,7 +16,7 @@ var nElapsedFrames;
 var bRecording;
 var cnv;
 function setup() {
-  cnv = createCanvas(1200, 675);
+  cnv = createCanvas(1500, 500);
   cnv.parent("perlin-canvas");
   // frameRate(frame_rate);
   bRecording = false;
@@ -25,10 +25,10 @@ function setup() {
   rows = floor(height / scl);
   fr = createP("");
   flowfield = new Array(cols * rows);
-  for (var i = 0; i < 2000; i++) {
+  for (var i = 0; i < 50; i++) {
     particles[i] = new Particle();
   }
-  background(255);
+  background(0);
 }
 
 function keyTyped() {
@@ -100,9 +100,8 @@ function draw() {
       particles[i].show();
       // if (percentCompleteFraction == 0.9) {
         // noLoop();
-      // }
+      }
     }
     fr.html("FPS: " + floor(frameRate()));
     // fr.html("FPS: " + floor(frameRate()) + " percent: " + percent);
   }
-}

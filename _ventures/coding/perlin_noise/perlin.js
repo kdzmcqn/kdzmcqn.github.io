@@ -4,6 +4,7 @@ let myp5 = new p5((sketch) => {
 
   sketch.setup = () => {
     sketch.createCanvas(400, 400);
+    randomSeed(44);
     // sketch.parent("perlin-canvas");
   };
 

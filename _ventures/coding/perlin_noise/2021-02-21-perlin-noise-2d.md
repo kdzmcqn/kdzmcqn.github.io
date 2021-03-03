@@ -11,6 +11,6 @@ dependency:
 # 2d
 
 <div class="p5-sketch" id="perlin-canvas">
-    <script type="text/javascript" src="/assets/js/p5/perlin2d.js"></script>
+    <script type="text/javascript" src="./perlin2d.js"></script>
 </div>
 
