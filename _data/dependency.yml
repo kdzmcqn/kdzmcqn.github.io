@@ -26,31 +26,31 @@
     # - <script src="/assets/js/mermaid/dist/mermaid.min.js.map"></script>
     # - <script src="/assets/js/mermaid/dist/mermaid.core.min.js.map"></script>
 
-- name: ccapture
-  element: 
-    - <script src="/lib/p5/ccapture.js/build/CCapture.all.min.js"></script>
-    - <script src="/lib/p5/ccapture.js/src/CCapture.js"></script>
+# - name: ccapture
+#   element: 
+#     - <script src="/lib/p5/ccapture.js/build/CCapture.all.min.js"></script>
+#     - <script src="/lib/p5/ccapture.js/src/CCapture.js"></script>
 
-- name: ccapture.download
-  element: 
-    - <script src="/lib/p5/ccapture.js/src/download.js"></script>
+# - name: ccapture.download
+#   element: 
+#     - <script src="/lib/p5/ccapture.js/src/download.js"></script>
     
-- name: ccapture.gif
-  element: 
-    - <script src="/lib/p5/ccapture.js/src/gif.js"></script>
+# - name: ccapture.gif
+#   element: 
+#     - <script src="/lib/p5/ccapture.js/src/gif.js"></script>
     
-- name: ccapture.gif.worker
-  element: 
-    - <script src="/lib/p5/ccapture.js/src/gif.worker.js"></script>
+# - name: ccapture.gif.worker
+#   element: 
+#     - <script src="/lib/p5/ccapture.js/src/gif.worker.js"></script>
     
-- name: ccapture.tar
-  element: 
-    - <script src="/lib/p5/ccapture.js/src/tar.js"></script>
+# - name: ccapture.tar
+#   element: 
+#     - <script src="/lib/p5/ccapture.js/src/tar.js"></script>
 
-- name: ccapture.webm
-  element: 
-    - <script src="/lib/p5/ccapture.js/src/webm-writer-0.2.0.js"></script>
+# - name: ccapture.webm
+#   element: 
+#     - <script src="/lib/p5/ccapture.js/src/webm-writer-0.2.0.js"></script>
 
-- name: ccapture.whammy
-  element: 
-    - <script src="/lib/p5/ccapture.js/src/Whammy.js"></script>
+# - name: ccapture.whammy
+#   element: 
+#     - <script src="/lib/p5/ccapture.js/src/Whammy.js"></script>

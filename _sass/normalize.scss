@@ -183,6 +183,13 @@ sub {
 
 img {
   border: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img + em {
+  text-align: center;
 }
 
 /**

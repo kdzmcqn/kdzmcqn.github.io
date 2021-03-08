@@ -6,8 +6,6 @@ category: coding
 tags: ["p5.js", "perlin", "generative", "random"]
 dependency:
   - p5
-  - ccapture
-  - ccapture.download
 ---
 
 # The blood in my veins

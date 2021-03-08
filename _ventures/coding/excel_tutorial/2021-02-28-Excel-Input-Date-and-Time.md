@@ -51,15 +51,19 @@ I will explain all of that later. If you're already familiar with programming, y
 ## Rename the Object
 This is optional, but to make life easier, let us rename our object akin to its function. This will make the code readable and your overall work much more easy to understand; not only by you, but also by others.
 
+### Go to the Selection Pane
+Go to _Home_ tab. On the far right side, there should be a _Find & Select_ menu. If you click on it, it will show you the the following figure below. If you can't find it in your _Home_ tab, then maybe your Excel setting is different, but that's another topic. You can always use the search bar on the top center of your excel window and from there, it the _Selection Pane_ would just pop up on the right.
+
 ![patientformobjs](./img/find_and_select.jpg)
 
-## Go to the Selection Pane
 ![patientformobjs](./img/find_and_select2.jpg)
+*Selection Pane*
 
-## Rename the shape
+Click on the _Selection Pane_ and it will open a side bar on the right side.
+### Rename the shape
 ![patientformobjs](./img/selection.jpg)
 
-## Change the name of the object back in the macro editor
+### Change the name of the object back in the macro editor
 ![patientformobjs](./img/selection_2.jpg)
 
 ![patientformobjs](./img/oval1_click.jpg)
@@ -180,8 +184,14 @@ function punchOutOS() {
 }
 
 ```
+
+[Yoyoyoyo][1]
+
+[1]: https://docs.microsoft.com/en-us/office/vba/excel/concepts/cells-and-ranges/make-a-cell-blink
+
 ### References
 - [Shape object](https://docs.microsoft.com/en-us/office/vba/api/excel.shape)
 - [Fill](https://docs.microsoft.com/en-us/office/vba/api/excel.shape.fill)
 - [VBA Model Click() Event](https://docs.microsoft.com/en-us/office/vba/language/reference/visual-basic-add-in-model/events-visual-basic-add-in-model)
 - [VBA Model Application.OnTIme() Method](https://docs.microsoft.com/en-us/office/vba/api/excel.application.ontime)
+
