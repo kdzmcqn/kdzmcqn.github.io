@@ -2,9 +2,12 @@ var scl = 20;
 var w = 1600;
 var h = 1000;
 
-var projname = "terrain";
-var nFramesInLoop = 100;
-var bEnableExport = true;
+//~ PROJECT
+var projname = "terrain_try";
+var nFramesInLoop = 10;
+var bEnableExport = false; //! TURN ON OR OFF
+
+//! Adjust FRAME RATE
 var frame_rate = 4;
 
 var fr;
@@ -21,7 +24,9 @@ function setup() {
   cnv.parent("p5-canvas");
 
   noiseSeed(44);
-  frameRate(frame_rate);
+  if (bEnableExport) {
+    frameRate(frame_rate);
+  }
   fr = createP("");
 
   bRecording = false;
@@ -70,16 +75,16 @@ function draw() {
     }
   }
 
-  function renderDrawing(percent) {
+  function renderDrawing() {
     flying -= 0.05;
     var yoff = flying;
     for (var y = 0; y < rows; y++) {
       var xoff = 0;
       for (var x = 0; x < cols; x++) {
-        terrain[x][y] = map(noise(xoff, yoff), 0, 1, -100, 100);
-        xoff += 0.1;
+        terrain[x][y] = map(noise(xoff, yoff), 0, 1, -300, 50);
+        xoff += 0.05;
       }
-      yoff += 0.1;
+      yoff += 0.05;
     }
 
     background(0);
@@ -90,7 +95,8 @@ function draw() {
     translate(-w / 2, -h / 2);
 
     for (var y = 0; y < rows - 1; y++) {
-      beginShape(TRIANGLE_STRIP);
+      //* CHANGE MODE
+      beginShape(LINES);
 
       for (var x = 0; x < cols; x++) {
         vertex(x * scl, y * scl, terrain[x][y]);
@@ -100,5 +106,9 @@ function draw() {
       endShape();
     }
   }
-  fr.html("FPS: " + floor(frameRate()));
+  if (bEnableExport) {
+    fr.html("FPS: " + floor(frameRate()) + " percent: " + percentCompleteFraction);
+  } else {
+    fr.html("FPS: " + floor(frameRate()));
+  }
 }

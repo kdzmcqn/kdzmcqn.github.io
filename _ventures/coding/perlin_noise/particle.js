@@ -22,7 +22,7 @@ function Particle() {
     this.follow = function (vectors) {
         var x = floor(this.pos.x / scl);
         var y = floor(this.pos.y / scl);
-        var index = x + y * cols;
+        var index = x + (y * cols);
         var force = vectors[index];
         this.applyForce(force);
     };

@@ -58,7 +58,8 @@ function draw() {
   // Note that the output images may be 2x large if you have a Retina mac.
   // You can compile these frames into an animated GIF using a tool like:
   if (bRecording && bEnableExport) {
-    var frameOutputFilename = myNickname + "_frame_" + nf(nElapsedFrames, 4) + ".jpg";
+    var frameOutputFilename =
+      myNickname + "_frame_" + nf(nElapsedFrames, 4) + ".jpg";
     print("Saving output image: " + frameOutputFilename);
     saveCanvas(cnv, frameOutputFilename, "jpg");
     nElapsedFrames++;
@@ -72,7 +73,7 @@ function draw() {
     for (var y = 0; y < rows; y++) {
       var xoff = 0;
       for (var x = 0; x < cols; x++) {
-        var index = x + (y * cols);
+        var index = x + y * cols;
         var angle = noise(xoff, yoff, zoff) * two_pi * 3;
         var v = p5.Vector.fromAngle(angle);
         v.setMag(5);
@@ -99,9 +100,12 @@ function draw() {
       particles[i].edges();
       particles[i].show();
       // if (percentCompleteFraction == 0.9) {
-        // noLoop();
-      }
+      // noLoop();
     }
-    fr.html("FPS: " + floor(frameRate()));
-    // fr.html("FPS: " + floor(frameRate()) + " percent: " + percent);
   }
+  if (bEnableExport) {
+    fr.html("FPS: " + floor(frameRate()) + " percent: " + percent);
+  } else {
+    fr.html("FPS: " + floor(frameRate()));
+  }
+}
