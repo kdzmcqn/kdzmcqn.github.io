@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Perlin Field"
+title: "Vein/Neuron Art"
 description: "Perlin noise"
 category: coding
 tags: ["p5.js", "perlin", "generative", "random"]
