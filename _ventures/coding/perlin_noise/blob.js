@@ -1,9 +1,13 @@
-var yoff = 0.0;
+var angle_inc;
 var cnv;
+var t = 0;
+var speed = 0.1;
+var chaos = 25;
 
 function setup() {
   cnv = createCanvas(400, 400);
   cnv.parent("p5-canvas");
+  angle_inc = PI / 60;
 }
 
 function draw() {
@@ -13,18 +17,18 @@ function draw() {
 
   var radius = 150;
 
+  noFill();
+  stroke(255);
   beginShape();
-  var xoff = 0;
-  for (var a = 0; a < TWO_PI; a += 0.1) {
-    var offset = map(noise(xoff, yoff), 0, 1, -25, 25);
-    var r = radius + offset;
+  for (var a = 0; a < TWO_PI; a += angle_inc) {
+    var offset = map(noise(cos(a), sin(a), t * speed), 0, 1, -25 - chaos, 25 + chaos);
+    var s = map(sin(a * 6), -1, 1, -25, 25);
+    var r = radius + offset + s;
     var x = r * cos(a);
     var y = r * sin(a);
     vertex(x, y);
-    xoff += 0.1;
-    //ellipse(x, y, 4, 4);
+    // ellipse(x, y, 4, 4);
   }
-  endShape();
-
-  yoff += 0.01;
+  t += 0.5;
+  endShape(CLOSE);
 }
