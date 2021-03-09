@@ -14,7 +14,7 @@ _matches the color of the header_
     <script type="text/javascript" src="./particle.js"></script>
     <script type="text/javascript" src="./perlinField.js"></script>
 </div>
-1200x675px only 1000 particles. good luck.
+960x540 pixels with 500 particles. Good luck.
 <!-- <script>
   var capturer = new CCapture({
     format: 'gif',

@@ -1,5 +1,5 @@
-var inc = 0.4;
-var scl = 20;
+var inc = 0.08;
+var scl = 30;
 var cols, rows;
 var two_pi = 6.28318530718;
 var zoff = 0;
@@ -16,7 +16,9 @@ var nElapsedFrames;
 var bRecording;
 var cnv;
 function setup() {
-  cnv = createCanvas(1500, 500);
+  // cnv = createCanvas(720, 405); //~ GCD : 45 = 3 * 3 * 5
+  cnv = createCanvas(960, 540); //~ GCD : 60 = 2 * 2 * 3 * 5
+  // cnv = createCanvas(1200, 675); //~ GCD : 75 = 3 * 5 * 5
   cnv.parent("perlin-canvas");
   // frameRate(frame_rate);
   bRecording = false;
@@ -25,7 +27,7 @@ function setup() {
   rows = floor(height / scl);
   fr = createP("");
   flowfield = new Array(cols * rows);
-  for (var i = 0; i < 50; i++) {
+  for (var i = 0; i < 500; i++) {
     particles[i] = new Particle();
   }
   background(0);
@@ -68,28 +70,28 @@ function draw() {
       noLoop();
     }
   }
-  function renderMyDesign(percent) {
+  function renderMyDesign(percentCompleteFraction) {
     var yoff = 0;
     for (var y = 0; y < rows; y++) {
       var xoff = 0;
       for (var x = 0; x < cols; x++) {
         var index = x + y * cols;
-        var angle = noise(xoff, yoff, zoff) * two_pi * 3;
+        var angle = noise(xoff, yoff, zoff) * two_pi;
         var v = p5.Vector.fromAngle(angle);
         v.setMag(5);
         flowfield[index] = v;
         xoff += inc;
-        // fill(random(255));
-        // fill(r);
-        // stroke(0, 50);
-
-        // rect(x * scl, y * scl, scl, scl);
-        // push();
-        // strokeWeight(1);
-        // translate(x * scl, y * scl);
-        // rotate(v.heading());
-        // line(0, 0, scl, 0);
-        // pop();
+        
+        colorMode(HSB, 675, 255, 255);
+        colorMode(HSB, two_pi);
+        rect(x * scl, y * scl, scl, scl);
+        fill(angle, 5, 1.88, 0.94);
+        push();
+        strokeWeight(1);
+        translate(x * scl, y * scl);
+        rotate(v.heading());
+        line(0, 0, scl, 0);
+        pop();
       }
       yoff += inc;
       zoff += 0.0005;
@@ -104,7 +106,7 @@ function draw() {
     }
   }
   if (bEnableExport) {
-    fr.html("FPS: " + floor(frameRate()) + " percent: " + percent);
+    fr.html("FPS: " + floor(frameRate()) + " percent: " + percentCompleteFraction);
   } else {
     fr.html("FPS: " + floor(frameRate()));
   }

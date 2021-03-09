@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "perlin"
-description: "perlin noise"
+title: "Perlin Noise"
+description: "Perlin Noise Algorithm developed by Ken Perlin"
 category: coding
 tags: ["p5.js", "perlin", "generative", "random"]
 dependency:

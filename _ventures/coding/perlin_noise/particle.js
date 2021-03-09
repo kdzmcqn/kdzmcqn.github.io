@@ -32,12 +32,13 @@ function Particle() {
     };
     
     this.show = function () {
-        setMetaColor = color(meta_primary_color);
-        // setMetaColor = color("red");
-        setMetaColor.setAlpha(25);
+        // setMetaColor = color(meta_primary_color);
+        setMetaColor = color("#ae7f98");
+        setMetaColor.setAlpha(3);
         stroke(setMetaColor);
         strokeWeight(1);
-        line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y);
+        ellipse(this.pos.x, this.pos.y, 4, 4);
+        // line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y);
         // point(this.pos.x, this.pos.y);
         this.updatePrev();
     };
