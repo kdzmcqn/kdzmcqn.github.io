@@ -8,9 +8,9 @@ var particles = [];
 var fr;
 
 var myNickname = "andro";
-var nFramesInLoop = 200;
+var nFramesInLoop = 140;
 var bEnableExport = false;
-// var frame_rate = 4;
+var frame_rate = 2;
 
 var nElapsedFrames;
 var bRecording;
@@ -20,7 +20,11 @@ function setup() {
   cnv = createCanvas(960, 540); //~ GCD : 60 = 2 * 2 * 3 * 5
   // cnv = createCanvas(1200, 675); //~ GCD : 75 = 3 * 5 * 5
   cnv.parent("perlin-canvas");
-  // frameRate(frame_rate);
+  
+  if (bEnableExport){
+    frameRate(frame_rate);
+  }
+  
   bRecording = false;
   nElapsedFrames = 0;
   cols = floor(width / scl);
@@ -106,7 +110,7 @@ function draw() {
     }
   }
   if (bEnableExport) {
-    fr.html("FPS: " + floor(frameRate()) + " percent: " + percentCompleteFraction);
+    fr.html("FPS: " + floor(frameRate()) + " percent: " + floor(percentCompleteFraction));
   } else {
     fr.html("FPS: " + floor(frameRate()));
   }
