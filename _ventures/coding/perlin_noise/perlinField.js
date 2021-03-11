@@ -79,17 +79,25 @@ function draw() {
     for (var y = 0; y < rows; y++) {
       var xoff = 0;
       for (var x = 0; x < cols; x++) {
-        var index = x + y * cols;
+        var index = x + (y * cols);
         var angle = noise(xoff, yoff, zoff) * two_pi;
         var v = p5.Vector.fromAngle(angle);
-        v.setMag(5);
+        
+        var v_mag = 4
+        v.setMag(v_mag);
+      
         flowfield[index] = v;
         xoff += inc;
-        
+
+        v.normalize();
+        var hue  = abs(v.y) + 0.8;
+        var br = abs(v.x + v.y) - 0.8;
+
         colorMode(HSB, 675, 255, 255);
-        colorMode(HSB, two_pi);
+        colorMode(HSB, 2);
         rect(x * scl, y * scl, scl, scl);
-        fill(angle, 5, 1.88, 0.94);
+        fill(hue, 2, br, 0.6);
+        stroke(hue, 2, br + 0.8, 0.6);
         push();
         strokeWeight(1);
         translate(x * scl, y * scl);
@@ -98,7 +106,7 @@ function draw() {
         pop();
       }
       yoff += inc;
-      zoff += 0.0005;
+      zoff += 0.0007;
     }
     for (var i = 0; i < particles.length; i++) {
       particles[i].follow(flowfield);
@@ -107,6 +115,7 @@ function draw() {
       particles[i].show();
       // if (percentCompleteFraction == 0.9) {
       // noLoop();
+      // }
     }
   }
   if (bEnableExport) {

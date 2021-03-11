@@ -74,9 +74,11 @@ function draw() {
     translate(width / 2, height / 2);
 
     var radius = 150;
-
-    noFill();
-    stroke(255);
+    var color_no = 1;
+    colorMode(HSB, 2);
+    
+    fill(color_no, 0.5, 2);
+    stroke(color_no, 2, 2);
     beginShape();
     for (var a = 0; a < TWO_PI; a += angle_inc) {
       var offset = map( noise(cos(a), sin(a), t * speed), 0, 1, -25 - chaos, 25 + chaos); 
