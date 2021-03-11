@@ -74,11 +74,9 @@ function draw() {
     translate(width / 2, height / 2);
 
     var radius = 150;
-    var color_no = 1;
-    colorMode(HSB, 2);
+    var color_no;
     
-    fill(color_no, 0.5, 2);
-    stroke(color_no, 2, 2);
+    colorMode(HSB, 50);
     beginShape();
     for (var a = 0; a < TWO_PI; a += angle_inc) {
       var offset = map( noise(cos(a), sin(a), t * speed), 0, 1, -25 - chaos, 25 + chaos); 
@@ -88,6 +86,9 @@ function draw() {
       var y = r * sin(a);
       vertex(x, y);
       // ellipse(x, y, 4, 4);
+      color_no = offset;
+      fill(color_no, 16, 25);
+      stroke(color_no, 16, 25);
     }
     t += 0.5;
     endShape(CLOSE);
