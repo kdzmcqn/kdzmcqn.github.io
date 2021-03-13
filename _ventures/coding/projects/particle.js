@@ -49,10 +49,12 @@ function Particle() {
   this.edges = function () {
     if (this.pos.x > width) {
       this.pos.x = 0;
+      this.pos.y = random(height);
       this.updatePrev();
     }
     if (this.pos.x < 0) {
       this.pos.x = width;
+      this.pos.y = random(height);
       this.updatePrev();
     }
     if (this.pos.y > height) {

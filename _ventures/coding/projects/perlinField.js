@@ -1,7 +1,6 @@
-var inc = 0.08;
+var inc = 0.05;
 var scl = 30;
 var cols, rows;
-var two_pi = 6.28318530718;
 var zoff = 0;
 var flowfield;
 var particles = [];
@@ -61,15 +60,14 @@ function draw() {
   colorMode(HSB, 675, 255, 255);
   colorMode(HSB, 2);
   function renderMyDesign(percentCompleteFraction) {
-    let v_mag = 5
     var yoff = 0;
     for (var y = 0; y < rows; y++) {
       var xoff = 0;
       for (var x = 0; x < cols; x++) {
         var index = x + (y * cols);
-        var angle = noise(xoff, yoff, zoff) * two_pi * 2;
+        var angle = noise(xoff, yoff, zoff) * TWO_PI * 3;
         var v = p5.Vector.fromAngle(angle);
-        v.setMag(v_mag);
+        v.setMag(1);
         flowfield[index] = v;
         xoff += inc;
         v.normalize();
@@ -86,7 +84,7 @@ function draw() {
         pop();
       }
       yoff += inc;
-      zoff += 0.0007;
+      zoff += 0.0001;
     }
     for (var i = 0; i < particles.length; i++) {
       particles[i].follow(flowfield);

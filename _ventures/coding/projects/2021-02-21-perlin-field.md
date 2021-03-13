@@ -8,7 +8,7 @@ dependency:
   - p5
 ---
 
-
+_Refresh_ for a new field set
 <div class="containCenter">
 <div class="sketchBig" id="perlin-canvas">
     <script type="text/javascript" src="./particle.js"></script>
