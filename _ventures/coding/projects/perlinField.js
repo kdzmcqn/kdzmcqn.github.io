@@ -1,5 +1,5 @@
 var inc = 0.08;
-var scl = 60;
+var scl = 30;
 var cols, rows;
 var two_pi = 6.28318530718;
 var zoff = 0;
