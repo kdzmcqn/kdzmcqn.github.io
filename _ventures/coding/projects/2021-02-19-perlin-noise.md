@@ -12,6 +12,8 @@ dependency:
 
 finally have time to integrate mermaid into my website.
 
-<div class="p5-sketch" id="perlin-canvas1">
+<div class="containCenter">
+<div class="sketch" id="perlin-canvas1">
     <script type="text/javascript" src="./perlin.js"></script>
+</div>
 </div>

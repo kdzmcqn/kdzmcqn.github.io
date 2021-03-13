@@ -9,9 +9,11 @@ dependency:
 ---
 
 
-<div class="p5-sketch" id="perlin-canvas">
+<div class="containCenter">
+<div class="sketchBig" id="perlin-canvas">
     <script type="text/javascript" src="./particle.js"></script>
     <script type="text/javascript" src="./perlinField.js"></script>
+</div>
 </div>
 960x540 pixels with 500 particles. Good luck.
 <!-- <script>

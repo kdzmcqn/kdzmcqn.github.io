@@ -538,7 +538,41 @@ a {
   color: $blockquote-text-color;
 }
 
-.p5-sketch {
+
+// .sketch {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: auto;
+// }
+
+.containCenter {
+  height: auto;
+  ////
+  // position: relative;
+  // border: 3px solid green;
+}
+
+.containCenter :is(.sketch){
+  overflow: visible;
+  text-align: center;
+  margin: auto;
+  width: auto;
+  padding: 10px;
+  // border: 3px solid green;
+
+  ////////
+  // margin: 0;
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // -ms-transform: translate(-50%, -50%);
+  // transform: translate(-50%, -50%);
+}
+
+// FLEXBOX
+.containCenter :is(.sketchBig){
+  overflow: visible;
   display: flex;
   justify-content: center;
   align-items: center;

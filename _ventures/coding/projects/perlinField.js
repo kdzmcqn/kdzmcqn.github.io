@@ -1,5 +1,5 @@
 var inc = 0.08;
-var scl = 30;
+var scl = 60;
 var cols, rows;
 var two_pi = 6.28318530718;
 var zoff = 0;
@@ -18,6 +18,7 @@ var cnv;
 function setup() {
   // cnv = createCanvas(720, 405); //~ GCD : 45 = 3 * 3 * 5
   cnv = createCanvas(960, 540); //~ GCD : 60 = 2 * 2 * 3 * 5
+  // cnv = createCanvas(500, 500); //~ test size
   // cnv = createCanvas(1200, 675); //~ GCD : 75 = 3 * 5 * 5
   cnv.parent("perlin-canvas");
   
@@ -31,7 +32,7 @@ function setup() {
   rows = floor(height / scl);
   fr = createP("");
   flowfield = new Array(cols * rows);
-  for (var i = 0; i < 500; i++) {
+  for (var i = 0; i < 1; i++) {
     particles[i] = new Particle();
   }
   background(0);
@@ -74,6 +75,9 @@ function draw() {
       noLoop();
     }
   }
+
+  colorMode(HSB, 675, 255, 255);
+  colorMode(HSB, 2);
   function renderMyDesign(percentCompleteFraction) {
     var yoff = 0;
     for (var y = 0; y < rows; y++) {
@@ -93,16 +97,16 @@ function draw() {
         var hue  = abs(v.y) + 0.8;
         var br = abs(v.x + v.y) - 0.8;
 
-        colorMode(HSB, 675, 255, 255);
-        colorMode(HSB, 2);
-        rect(x * scl, y * scl, scl, scl);
         fill(hue, 2, br, 0.6);
         stroke(hue, 2, br + 0.8, 0.6);
-        push();
         strokeWeight(1);
+        textSize(12);
+        push();
+        text(index, x * scl, (y * scl) + 12);
+        rect(x * scl, y * scl, scl, scl);
         translate(x * scl, y * scl);
         rotate(v.heading());
-        line(0, 0, scl, 0);
+        line(0 ,0, scl, 0);
         pop();
       }
       yoff += inc;
@@ -121,6 +125,6 @@ function draw() {
   if (bEnableExport) {
     fr.html("FPS: " + floor(frameRate()) + " percent: " + floor(percentCompleteFraction));
   } else {
-    fr.html("FPS: " + floor(frameRate()));
+    fr.html("FPS: " + floor(frameRate()) + " Frame: " + frameCount);
   }
 }

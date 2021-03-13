@@ -24,7 +24,7 @@ Someone I know who's currently studying in medicine sent an example of their for
 With this tutorial—however not much, since only two cells will be filled automatically—it will teach you how to automate and become at least familiar with basic programming. May you find the joy and open doors for you in programming, because the world is evolving towards computer technology.
 
 ## Create a shape oject
-You can create a shape by going to the _Insert_ tab. Under the _Illustrations_, select _Shapes_ then pick your favorite shape. I chose _Oval_ for this example. You may edit or format the shape. I will not affect the program you're about to make. 
+You can create a _shape object_[^1] by going to the _Insert_ tab. Under the _Illustrations_, select _Shapes_ then pick your favorite shape. I chose _Oval_ for this example. You may edit or format the shape. I will not affect the program you're about to make. 
 
 ![patientformobjs](./img/create_shape.jpg)
 
@@ -184,14 +184,28 @@ function punchOutOS() {
 }
 
 ```
+[^2]
 
-[Yoyoyoyo][1]
+[^3]
 
-[1]: https://docs.microsoft.com/en-us/office/vba/excel/concepts/cells-and-ranges/make-a-cell-blink
+[^4]
+
+[^5]
+
+[^6]
+
 
 ### References
-- [Shape object](https://docs.microsoft.com/en-us/office/vba/api/excel.shape)
-- [Fill](https://docs.microsoft.com/en-us/office/vba/api/excel.shape.fill)
-- [VBA Model Click() Event](https://docs.microsoft.com/en-us/office/vba/language/reference/visual-basic-add-in-model/events-visual-basic-add-in-model)
-- [VBA Model Application.OnTIme() Method](https://docs.microsoft.com/en-us/office/vba/api/excel.application.ontime)
+[^1]: [Shape object](https://docs.microsoft.com/en-us/office/vba/api/excel.shape) - https://docs.microsoft.com/en-us/office/vba/api/excel.shape
 
+
+[^2]: [Fill](https://docs.microsoft.com/en-us/office/vba/api/excel.shape.fill) - https://docs.microsoft.com/en-us/office/vba/api/excel.shape.fill
+
+[^3]: [VBA Model Click() Event](https://docs.microsoft.com/en-us/office/vba/language/reference/visual-basic-add-in-model/events-visual-basic-add-in-model) - https://docs.microsoft.com/en-us/office/vba/language/reference/visual-basic-add-in-model/events-visual-basic-add-in-model
+
+[^4]: [VBA Model Application.OnTIme() Method](https://docs.microsoft.com/en-us/office/vba/api/excel.application.ontime) - 
+https://docs.microsoft.com/en-us/office/vba/api/excel.application.ontime
+
+[^5]: [Make a Cell Blink](https://docs.microsoft.com/en-us/office/vba/excel/concepts/cells-and-ranges/make-a-cell-blink) - https://docs.microsoft.com/en-us/office/vba/excel/concepts/cells-and-ranges/make-a-cell-blink
+
+[^6]: [yoyo](www.google.com) - google.com
