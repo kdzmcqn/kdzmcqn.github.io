@@ -43,7 +43,7 @@ function Particle() {
     let vvx = abs(this.vel.x);
     let vvy = abs(this.vel.y);
     if ((vvx < 0.2) && (vvy < 0.2)) {
-        this.vel.add(1,1);
+        this.vel.add(0.5,0.5);
     }
   };
 
