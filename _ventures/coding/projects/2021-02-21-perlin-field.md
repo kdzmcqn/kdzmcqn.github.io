@@ -15,11 +15,4 @@ dependency:
     <script type="text/javascript" src="./perlinField.js"></script>
 </div>
 </div>
-960x540 pixels with 500 particles. Good luck.
-<!-- <script>
-  var capturer = new CCapture({
-    format: 'gif',
-    framerate: 60,
-    verbose: true,
-  })
-</script> -->
+960x540 pixels with 600 particles. Good luck.

@@ -25,7 +25,7 @@ function setup() {
   rows = floor(height / scl);
   fr = createP("");
   flowfield = new Array(cols * rows);
-  for (var i = 0; i < 1000; i++) {
+  for (var i = 0; i < 600; i++) {
     particles[i] = new Particle();
   }
   background(0);
@@ -61,14 +61,14 @@ function draw() {
   colorMode(HSB, 675, 255, 255);
   colorMode(HSB, 2);
   function renderMyDesign(percentCompleteFraction) {
+    let v_mag = 5
     var yoff = 0;
     for (var y = 0; y < rows; y++) {
       var xoff = 0;
       for (var x = 0; x < cols; x++) {
         var index = x + (y * cols);
-        var angle = noise(xoff, yoff, zoff) * two_pi;
+        var angle = noise(xoff, yoff, zoff) * two_pi * 2;
         var v = p5.Vector.fromAngle(angle);
-        var v_mag = 4
         v.setMag(v_mag);
         flowfield[index] = v;
         xoff += inc;

@@ -14,26 +14,21 @@ function Particle() {
   this.follow = function (vectors) {
     var x = floor(this.pos.x / scl);
     var y = floor(this.pos.y / scl);
-    var index = x + (y * cols);
+    var index = x + y * cols;
     var force = vectors[index];
     var field_index_length = vectors.length - 1;
     this.applyForce(force, index, field_index_length);
   };
   this.applyForce = function (force, index, field_index_length) {
-    try {
-        let vec_br = abs(force.x + force.y);
-        this.vel.mult(vec_br);
-    }
-    catch (e){
-        console.log('%c force vector is out of bound', 'color: orange;');
-        console.log(e.name + ': ' + e.message);
-        console.log({index,field_index_length});
+    if (index <= field_index_length) {
+      let vec_br = abs(force.x + force.y);
+      this.vel.mult(vec_br);
     }
     this.acc.add(force);
     let vvx = abs(this.vel.x);
     let vvy = abs(this.vel.y);
-    if ((vvx < 0.2) && (vvy < 0.2)) {
-        this.vel.add(0.5,0.5);
+    if (vvx < 0.2 && vvy < 0.2) {
+      this.vel.add(0.5, 0.5);
     }
   };
   this.show = function () {
