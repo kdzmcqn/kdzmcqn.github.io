@@ -20,9 +20,13 @@ function Particle() {
     this.applyForce(force, index, field_index_length);
   };
   this.applyForce = function (force, index, field_index_length) {
-    if (index <= field_index_length) {
+    try {
+      if (index <= field_index_length) {
       let vec_br = abs(force.x + force.y);
       this.vel.mult(vec_br);
+    }
+    } catch {
+      console.log("index no: " + index + " max: "+ field_index_length);
     }
     this.acc.add(force);
     let vvx = abs(this.vel.x);
@@ -32,7 +36,7 @@ function Particle() {
     }
   };
   this.show = function () {
-    setMetaColor = color("#ae7f98");
+    setMetaColor = color('#ffff95');
     setMetaColor.setAlpha(3);
     stroke(setMetaColor);
     strokeWeight(3);
@@ -47,17 +51,17 @@ function Particle() {
     this.prevPos.y = this.pos.y;
   };
   this.edges = function () {
-    if (this.pos.x > width) {
+    if (this.pos.x > (width)) {
       this.pos.x = 0;
       this.pos.y = random(height);
       this.updatePrev();
     }
     if (this.pos.x < 0) {
-      this.pos.x = width;
+      this.pos.x = width * 4;
       this.pos.y = random(height);
       this.updatePrev();
     }
-    if (this.pos.y > height) {
+    if (this.pos.y > (height)) {
       this.pos.y = 0;
       this.updatePrev();
     }

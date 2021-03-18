@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Perlin Terrain"
-description: "Perlin noise"
+title: "Line Field"
+description: "yo"
 category: coding
 tags: ["p5.js", "perlin", "generative", "random"]
 dependency:
@@ -11,6 +11,6 @@ dependency:
 
 <div class="containCenter">
 <div class="sketch" id="p5-canvas">
-    <script type="text/javascript" src="./terrain.js"></script>
+    <script type="text/javascript" src="./line2.js"></script>
 </div>
 </div>
