@@ -54,13 +54,13 @@ function Particle() {
     if (this.pos.x > (width)) {
       this.pos.x = 0;
       // this.vel.mult(-1,1);
-      this.pos.y = this.prevPos.y;
+      // this.pos.y = this.prevPos.y;
       this.updatePrev();
     }
     if (this.pos.x < 0) {
       this.pos.x = width;
       // this.vel.mult(-1,1);
-      this.pos.y = this.prevPos.y;
+      // this.pos.y = this.prevPos.y;
       this.updatePrev();
     }
     if (this.pos.y > (height)) {

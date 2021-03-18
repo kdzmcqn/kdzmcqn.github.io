@@ -1,4 +1,4 @@
-const inc = 0.05;
+const inc = 0.055;
 const scl = 20;
 let cols, rows;
 var zoff = 0;
@@ -90,7 +90,7 @@ function draw() {
         pop();
       }
       yoff += inc;
-      zoff += 0.0001;
+      zoff += 0.00035;
     }
     for (var i = 0; i < particles.length; i++) {
       particles[i].follow(flowfield);
