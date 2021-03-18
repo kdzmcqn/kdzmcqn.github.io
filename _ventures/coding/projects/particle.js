@@ -52,21 +52,25 @@ function Particle() {
   };
   this.edges = function () {
     if (this.pos.x > (width)) {
-      this.pos.x = 0;
-      this.pos.y = random(height);
+      // this.pos.x = 0;
+      this.vel.mult(-1,1);
+      this.pos.y = this.prevPos.y;
       this.updatePrev();
     }
     if (this.pos.x < 0) {
-      this.pos.x = width * 4;
-      this.pos.y = random(height);
+      // this.pos.x = width;
+      this.vel.mult(-1,1);
+      this.pos.y = this.prevPos.y;
       this.updatePrev();
     }
     if (this.pos.y > (height)) {
-      this.pos.y = 0;
+      this.vel.mult(1,-1);
+      // this.pos.y = 0;
       this.updatePrev();
     }
     if (this.pos.y < 0) {
-      this.pos.y = height;
+      this.vel.mult(1,-1);
+      // this.pos.y = height;
       this.updatePrev();
     }
   };
