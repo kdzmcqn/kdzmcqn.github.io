@@ -20,14 +20,14 @@ function Particle() {
     this.applyForce(force, index, field_index_length);
   };
   this.applyForce = function (force, index, field_index_length) {
-    try {
-      if (index <= field_index_length) {
-      let vec_br = abs(force.x + force.y);
-      this.vel.mult(vec_br);
-    }
-    } catch {
-      console.log("index no: " + index + " max: "+ field_index_length);
-    }
+    // try {
+    //   if (index??field_index_length) {
+    //   let vec_br = abs(force.x + force.y);
+    //   this.vel.mult(vec_br);
+    // }
+    // } catch {
+    //   console.log("index no: " + index + " max: "+ field_index_length);
+    // }
     this.acc.add(force);
     let vvx = abs(this.vel.x);
     let vvy = abs(this.vel.y);
@@ -52,25 +52,25 @@ function Particle() {
   };
   this.edges = function () {
     if (this.pos.x > (width)) {
-      // this.pos.x = 0;
-      this.vel.mult(-1,1);
+      this.pos.x = 0;
+      // this.vel.mult(-1,1);
       this.pos.y = this.prevPos.y;
       this.updatePrev();
     }
     if (this.pos.x < 0) {
-      // this.pos.x = width;
-      this.vel.mult(-1,1);
+      this.pos.x = width;
+      // this.vel.mult(-1,1);
       this.pos.y = this.prevPos.y;
       this.updatePrev();
     }
     if (this.pos.y > (height)) {
-      this.vel.mult(1,-1);
-      // this.pos.y = 0;
+      // this.vel.mult(1,-1);
+      this.pos.y = 0;
       this.updatePrev();
     }
     if (this.pos.y < 0) {
-      this.vel.mult(1,-1);
-      // this.pos.y = height;
+      // this.vel.mult(1,-1);
+      this.pos.y = height;
       this.updatePrev();
     }
   };
