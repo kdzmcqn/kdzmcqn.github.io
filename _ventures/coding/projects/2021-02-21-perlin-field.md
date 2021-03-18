@@ -15,4 +15,4 @@ _Refresh_ for a new field set
     <script type="text/javascript" src="./perlinField.js"></script>
 </div>
 </div>
-960x540 pixels with 600 particles. Good luck.
+960x540 pixels with 100 particles. Good luck.
